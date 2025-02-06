@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="BraviusAI - AI & Robotics HTML Template">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <title>About - BraviusAI</title>
+    <!-- Favicons  -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.svg">
+    <!-- default sheet of css -->
+    <link rel="stylesheet" href="assets/css/output.css">
+    <!-- fonts awsome icon link  -->
+    <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css">
+    <!-- animation of css -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body>
+
+    <!-- 1.1. Header  -->
+    <header class="bg-background-blurBg text-white absolute top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-6 px-6" data-aos="fade-down">
+            <figure class="flex items-center">
+                <a href="index.html">
+                    <img class="w-36" src="assets/images/logo/logo.svg" alt="logo">
+                </a>
+            </figure>
+            <nav class="hidden lg:flex space-x-8">
+                <a class="p linkhover" href="index.html">Home</a>
+                <a class="p linkhover active" href="About.html">About Us</a>
+                <a class="p linkhover" href="Services.html">Services</a>
+                <a class="p linkhover" href="Blog.html">Blog</a>
+                <div class="relative dropdown">
+                    <a class="cursor-pointer p pb-3 linkhover">Pages <i
+                            class="fa-solid fa-chevron-down text-xs"></i></a>
+                    <div
+                        class="absolute left-0 mt-2 w-48 text-primary bg-background-secondaryBg shadow-lg dropdown-menu py-3 px-2">
+                        <a class="block px-4 py-2 linkhover p" href="Project.html">Project</a>
+                        <a class="block px-4 py-2 linkhover p" href="Pricing.html">Pricing</a>
+                        <a class="block px-4 py-2 linkhover p" href="Team.html">Team</a>
+                        <a class="block px-4 py-2 linkhover p" href="SinglePost.html">Single Post</a>
+                        <a class="block px-4 py-2 linkhover p" href="ComingSoon.html">Coming Soon</a>
+                        <a class="block px-4 py-2 linkhover p" href="Error.html">404</a>
+                    </div>
+                </div>
+                <a class="p linkhover" href="Contact.html">Contact</a>
+            </nav>
+            <div class="hidden lg:flex items-center space-x-4">
+                <i class="fas fa-search text-white cursor-pointer text-xl linkhover" onclick="toggleSearch()"></i>
+                <hr class="w-px h-7 bg-white mx-4">
+                <i class="fas fa-bars text-white cursor-pointer text-2xl linkhover" onclick="toggleMenu()"></i>
+            </div>
+            <div class="lg:hidden flex">
+                <i class="fas fa-bars text-white cursor-pointer text-2xl linkhover" onclick="toggleAside()"></i>
+            </div>
+        </div>
+        <aside
+            class="lg:hidden fixed inset-0 bg-background-primaryBg text-white transform translate-x-full transition-transform duration-300 overflow-y-scroll aside-menu z-50"
+            id="asideMenu">
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <figure> <img src="assets/images/logo/logo.svg" class="w-32 pt-3 pb-7" alt="logo"></figure>
+                    <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleAside()">
+                        <i class="fas fa-times text-3xl text-white linkhover"></i>
+                    </button>
+                </div>
+                <nav class="flex flex-col space-y-4">
+                    <a class="p linkhover" href="index.html">Home</a>
+                    <a class="p linkhover active" href="About.html">About Us</a>
+                    <a class="p linkhover" href="Services.html">Services</a>
+                    <a class="p linkhover" href="Blog.html">Blog</a>
+                    <a class="p linkhover" href="Contact.html">Contact</a>
+                    <div class="relative aside-dropdown">
+                        <a class="cursor-pointer p pb-3 linkhover">Pages <i
+                                class="fa-solid fa-chevron-down text-xs"></i></a>
+                        <div class="left-0 mt-2 w-48 text-primary rounded-lg shadow-lg dropdown-menu bg-transparent">
+                            <a class="block py-2 linkhover p" href="Project.html">Project</a>
+                            <a class="block py-2 linkhover p" href="Pricing.html">Pricing</a>
+                            <a class="block py-2 linkhover p" href="Team.html">Team</a>
+                            <a class="block py-2 linkhover p" href="SinglePost.html">Single Post</a>
+                            <a class="block py-2 linkhover p" href="ComingSoon.html">Coming Soon</a>
+                            <a class="block py-2 linkhover p" href="Error.html">404</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+        <div id="sideMenu"
+            class="fixed top-0 right-0 pt-24 px-12 h-full bg-background-primaryBg text-white side-menu transform translate-x-full transition-transform duration-300 overflow-y-scroll z-50">
+            <div class="p-4">
+                <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleMenu()">
+                    <i class="fas fa-times text-3xl text-white linkhover"></i>
+                </button>
+                <figure>
+                    <img src="assets/images/logo/logo.svg" class="w-40" alt="logo">
+                </figure>
+                <p class="w-[min-content] min-w-96 py-10">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris
+                    nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+                <div class="flex flex-col gap-8">
+                    <a href="#" class="flex gap-4 items-center linkhover">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h6>120 West Lancashire, England </h6>
+                    </a>
+                    <a href="#" class="flex gap-4 items-center linkhover">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h6>support@username.com </h6>
+                    </a>
+                    <a href="#" class="flex gap-4 items-center linkhover">
+                        <i class="fa-solid fa-phone"></i>
+                        <h6>(+122) 34 5678 9100 </h6>
+                    </a>
+                </div>
+                <div class="py-12 flex flex-col gap-6">
+                    <h5>Get News & Updates</h5>
+                    <form action="#"
+                        class="w-full flex justify-between items-center bg-white rounded-[100px] ps-6 pe-1 py-2 text-secondary">
+                        <input type="email" placeholder="Your email..." class="text-black placeholder:text-black p"
+                            required name="sideMail" autocomplete="off">
+                        <button
+                            class="p-4 bg-secondary transition-all rounded-full h-11 w-11 flex justify-center items-center hover:text-white text-black"><i
+                                class="fa-regular fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="flex gap-4 pb-4">
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div id="searchOverlay" class="fixed inset-0 bg-background-blurBg items-center justify-center search-overlay">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleSearch()">
+                <i class="fas fa-times text-3xl text-white linkhover"></i>
+            </button>
+            <div class="p-4 rounded-lg w-3/4 lg:w-2/3 relative">
+                <form class="flex">
+                    <input
+                        class="w-full p-4 rounded-l-xl text-white bg-background-blurBg border border-solid border-secondary"
+                        placeholder="Search..." type="text" required name="search" />
+                    <button
+                        class="bg-secondary hover:bg-background text-black hover:text-secondary p-4 rounded-r-lg transition-all border border-solid border-secondary">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- End of 1.1. Header  -->
+    <!-- 2.1. SubPage_Hero -->
+    <section>
+        <div
+            class="container lg:pt-40 md:pt-36 pt-32 lg:pb-[80px] md:pb-[60px] pb-[45px] border-b-[1px] border-solid border-white text-center">
+            <div class="flex flex-col items-center justify-center text-primary lg:gap-7 gap-5" data-aos="zoom-in-up">
+                <h2>Artificial Intelligence Innovation</h2>
+                <div class="flex items-center md:justify-start justify-center">
+                    <a href="index.html" class="linkhover">
+                        <p>HOME</p>
+                    </a>
+                    <i class="fa-solid fa-diamond text-xs p-2"></i>
+                    <p class="text-secondary">ABOUT US</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of 2.1. SubPage_Hero -->
+    <!-- 1.4. About  -->
+    <section class="lg:py-[100px] md:py-[70px] py-[50px]">
+        <div class="container">
+            <div class="grid lg:grid-cols-[55%_45%] md:grid-cols-[48%_48%] justify-around md:gap-0 gap-6">
+                <div class="flex text-primary flex-col xl:w-full lg:w-[90%] md:text-start text-center"
+                    data-aos="fade-up">
+                    <div class="flex items-center md:justify-start justify-center">
+                        <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                        <h6>ABOUT US</h6>
+                    </div>
+                    <h2 class="py-4">Transform Your Business With AI Technology</h2>
+                    <p class="xl:w-[93%] lg:w-[95%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="flex md:gap-8 gap-4 pt-10 flex-col">
+                        <div class="flex flex-col w-full gap-[10px]">
+                            <div class="flex justify-between">
+                                <p>Artificial Intelligence</p>
+                                <p><span class="number" data-final-value="90">0</span>%</p>
+                            </div>
+                            <!-- animate bg from 0 to the value in width  -->
+                            <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
+                                <div class="bg-secondary h-2.5 rounded-full" data-final-width="90" style="width: 0%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full gap-[10px]">
+                            <div class="flex justify-between">
+                                <p>Client Service</p>
+                                <p><span class="number" data-final-value="71">0</span>%</p>
+                            </div>
+                            <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
+                                <div class="bg-secondary h-2.5 rounded-full" data-final-width="71" style="width: 0%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full gap-[10px]">
+                            <div class="flex justify-between">
+                                <p>Quality</p>
+                                <p><span class="number" data-final-value="85">0</span>%</p>
+                            </div>
+                            <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
+                                <div class="bg-secondary h-2.5 rounded-full" data-final-width="85" style="width: 0%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:mt-14 md:mt-10 mt-6">
+                        <a href="About.html" class="hover1">More About</a>
+                    </div>
+                </div>
+                <div class="w-full flex lg:justify-end justify-center">
+                    <figure>
+                        <img class="w-fit" src="assets/images/about/about_Img.webp" alt="about_Img"
+                            data-aos="zoom-in-up">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of 1.4. About  -->
+    <!-- 1.10. CTA  -->
+    <section class="mx-auto lg:mb-[100px] md:mb-[70px] mb-[50px] bg-ctaBg bg-no-repeat bg-center lg:w-[95%] w-[95%]">
+        <div class="container">
+            <div class="flex md:gap-4 gap-10 md:flex-row flex-col lg:py-32 md:py-24 py-16">
+                <div class="flex md:w-1/2 justify-center" data-aos="fade-up">
+                    <div class="text-primary md:text-start text-center flex flex-col md:items-start items-center">
+                        <div class="flex items-center md:justify-start justify-center">
+                            <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                            <h6>AI KNOWLEDGE HUB</h6>
+                        </div>
+                        <h2 class="pt-4 md:pb-4 pb-3 xl:w-[90%]">Unlock The Potential Of AI And Robotics</h2>
+                        <div class="lg:mt-6 mt-4">
+                            <a href="#" class="hover1">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex md:w-1/2 justify-center items-center">
+                    <a id="openVideoModal" class="flex gap-4 items-center group transition-all" data-aos="zoom-in-up">
+                        <figure
+                            class="flex items-center justify-center md:w-24 w-20 h-20 md:h-24 rounded-full bg-primary animate-pulse group-hover:bg-secondary">
+                            <i class="fa fa-play text-background-primaryBg  md:text-4xl text-2xl"></i>
+                        </figure>
+                    </a>
+                    <!-- videoModal -->
+                    <div id="videoModal"
+                        class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50">
+                        <div class="rounded-lg overflow-hidden shadow-lg w-full max-w-3xl">
+                            <button id="closeModal"
+                                class="absolute top-5 right-5 text-gray-500 hover:text-gray-700 z-50">
+                                <i class="fa-solid fa-xmark text-3xl text-white hover:text-secondary"></i>
+                            </button>
+                            <div class="relative p-4 animate-slideFadeTwistEntrance">
+                                <iframe src="https://www.youtube.com/embed/u31qwQUeGuM?si=o1Nt3XrgyYRKwJ13"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    class="w-full h-64 md:h-96 border-0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of 1.10. CTA  -->
+    <div class="bg-background-dim border-t-[5px] borderColor border-solid">
+        <!-- 2.2. Stats -->
+        <section class="lg:py-[100px] md:py-[70px] py-[50px]">
+            <div class="container">
+                <h2 class="lg:w-[55%] md:w-[60%] text-primary lg:mb-4 mb-3 md:text-start text-center"
+                    data-aos="fade-up">Innovating the
+                    Future
+                    with AI and Robotics</h2>
+                <div class="flex md:gap-4 gap-6 justify-between md:flex-row flex-col">
+                    <div class="flex md:w-[60%] flex-col" data-aos="flip-left">
+                        <figure>
+                            <img class="w-full" src="assets/images/about/stats.webp" alt="statsImg">
+                        </figure>
+                        <div
+                            class="lg:px-10 lg:py-7 px-6 py-5 flex flex-col gap-3 text-primary bg-background-secondaryBg  md:text-start text-center">
+                            <div
+                                class="flex gap-3 items-center md:justify-start justify-center md:flex-nowrap flex-wrap">
+                                <h5>Kylan Gentry</h5>
+                                <i class="fa-solid fa-minus text-primary"></i>
+                                <p>CEO</p>
+                                <span>-</span>
+                                <p>AI GLOBE</p>
+                            </div>
+                            <p class="xl:w-[80%] lg:w-[90%]">At auctor urna nunc id cursus metus. Odio ut enim blandit
+                                volutpat
+                                phasellus faucibus
+                                scelerisque eius maecenas fringilla volutpat blandit.</p>
+                        </div>
+                    </div>
+                    <div class="flex lg:w-[35%] md:w[40%] flex-col">
+                        <div class="flex lg:gap-7 md:gap-5 gap-6 flex-col text-primary" data-aos="fade-up">
+                            <div
+                                class="flex items-center md:text-start text-center lg:gap-9 md:gap-7 gap-4 md:flex-row flex-col">
+                                <figure>
+                                    <img class="w-16" src="assets/images/icons/trust.svg" alt="trust">
+                                </figure>
+                                <div>
+                                    <h3><span class="number" data-final-value="300">0</span>+</h3>
+                                    <p class="uppercase">TRUSTED PARTNERS</p>
+                                </div>
+                            </div>
+                            <hr class="w-full bg-white">
+                            <div
+                                class="flex items-center md:text-start text-center lg:gap-9 md:gap-7 gap-4 md:flex-row flex-col">
+                                <figure>
+                                    <img class="w-16" src="assets/images/icons/prize.svg" alt="prize">
+                                </figure>
+                                <div>
+                                    <h3><span class="number" data-final-value="15">0</span>+</h3>
+                                    <p class="uppercase">Years Of Experience</p>
+                                </div>
+                            </div>
+                            <hr class="w-full bg-white">
+                            <div
+                                class="flex items-center md:text-start text-center lg:gap-9 md:gap-7 gap-4 md:flex-row flex-col">
+                                <figure>
+                                    <img class="w-16" src="assets/images/icons/community.svg" alt="community">
+                                </figure>
+                                <div>
+                                    <h3><span class="number" data-final-value="200">0</span>+</h3>
+                                    <p class="uppercase">CREATIVE PROFESSIONALS</p>
+                                </div>
+                            </div>
+                            <hr class=" w-full bg-white">
+                            <div
+                                class="flex items-center md:text-start text-center lg:gap-9 md:gap-7 gap-4 md:flex-row flex-col">
+                                <figure>
+                                    <img class="w-16" src="assets/images/icons/worldwide.svg" alt="worldwide">
+                                </figure>
+                                <div>
+                                    <h3><span class="number" data-final-value="150">0</span>+</h3>
+                                    <p class="uppercase">WORLDWIDE USERS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of 2.2. Stats -->
+        <!-- 1.7. WhyUs  -->
+        <section>
+            <div class="container">
+                <div class="flex lg:flex-row flex-col-reverse lg:gap-4 gap-6 lg:justify-between justify-center">
+                    <div class="xl:w-[42%] lg:w-[40%] flex lg:justify-start justify-center">
+                        <figure class="w-fit">
+                            <img class="w-full" src="assets/images/about/whyUs.webp" alt="wayus" data-aos="zoom-in-up">
+                        </figure>
+                    </div>
+                    <div class="xl:w-[58%] lg:w-[60%]">
+                        <div class="flex lg:text-start text-center flex-col text-primary lg:items-start items-center">
+                            <div class="lg:pb-8 pb-6" data-aos="fade-up">
+                                <div class="flex items-center lg:justify-start justify-center">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <h6>WHY US</h6>
+                                </div>
+                                <h3 class="pt-4 md:pb-4 pb-3 xl:w-[85%]">Innovate, Ignite, Invent: Your AI
+                                    Business Companion</h3>
+                                <p class="xl:w-[85%]">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                    blanditiis praesentium sint
+                                    voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                            </div>
+                            <div class="flex gap-6 flex-col">
+                                <div class="flex lg:gap-7 gap-5 lg:flex-row flex-col lg:items-start items-center md:px-0 px-3 group"
+                                    data-aos="fade-up">
+                                    <figure>
+                                        <img class="w-12 pt-2 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
+                                            src="assets/images/icons/solution.svg" alt="solution">
+                                    </figure>
+                                    <div class="flex flex-col gap-1">
+                                        <h5 class="group-hover:text-secondary">Smart Solution</h5>
+                                        <p class="lg:w-[65%]">Lorem ipsum dolor sit amet, dui consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod tempor.</p>
+                                    </div>
+                                </div>
+                                <div class="flex lg:gap-7 gap-5 lg:flex-row flex-col lg:items-start items-center md:px-0 px-3 group"
+                                    data-aos="fade-up">
+                                    <figure>
+                                        <img class="w-12 pt-2 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
+                                            src="assets/images/icons/reliability.svg" alt="solution">
+                                    </figure>
+                                    <div class="flex flex-col gap-1">
+                                        <h5 class="group-hover:text-secondary">Better Reliability</h5>
+                                        <p class="lg:w-[65%]">Lorem ipsum dolor sit amet, dui consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod
+                                            tempor.</p>
+                                    </div>
+                                </div>
+                                <div class="flex lg:gap-7 gap-5 lg:flex-row flex-col lg:items-start items-center md:px-0 px-3 group"
+                                    data-aos="fade-up">
+                                    <figure>
+                                        <img class="w-12 pt-2 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
+                                            src="assets/images/icons/integration.svg" alt="solution">
+                                    </figure>
+                                    <div class="flex flex-col gap-1">
+                                        <h5 class="group-hover:text-secondary">Easy Integration</h5>
+                                        <p class="lg:w-[65%]">Lorem ipsum dolor sit amet, dui consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod
+                                            tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:mt-10 mt-7 flex lg:justify-start justify-center">
+                                <a href="About.html" class="hover1">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of 1.7. WhyUs  -->
+        <!-- 2.3. Team -->
+        <section class="lg:py-[100px] md:py-[70px] py-[50px]">
+            <div class="container">
+                <div class="lg:w-[90%] w-[95%] m-auto" data-aos="fade-up">
+                    <div class="flex items-center justify-center text-center flex-col text-primary">
+                        <div class="flex items-center md:justify-start justify-center">
+                            <i class="fa-solid fa-diamond text-xs pe-2"></i>
+                            <h6>OUR TEAM</h6>
+                        </div>
+                        <h2 class="pt-4 md:pb-11 pb-8">A Community Of AI Professionals</h2>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col md:gap-x-0 gap-x-6 flex-wrap gap-y-6">
+                    <div class="md:w-1/3">
+                        <div class="flex flex-col group px-3 h-full" data-aos="flip-left">
+                            <div class="relative h-full">
+                                <figure class="h-full">
+                                    <img class="w-full h-full" src="assets/images/team/teamMember_1.webp"
+                                        alt="teamMember_1">
+                                </figure>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-[#00F0FF66] to-[#00F0FF66] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                </div>
+                                <div
+                                    class="absolute lg:bottom-8 bottom-6 left-0 right-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 lg:gap-4 gap-3">
+                                    <a href="#">
+                                        <figure
+                                            class="flex justify-center items-center lg:w-11 lg:h-11 w-9 h-9 bg-white rounded-full hover:bg-background-primaryBg text-background-primaryBg hover:text-secondary">
+                                            <i class="fa-brands fa-facebook-f lg:text-lg text-sm"></i>
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure
+                                            class="flex justify-center items-center lg:w-11 lg:h-11 w-9 h-9 bg-white rounded-full hover:bg-background-primaryBg text-background-primaryBg hover:text-secondary">
+                                            <i class="fa-brands fa-twitter lg:text-lg text-sm"></i>
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure
+                                            class="flex justify-center items-center lg:w-11 lg:h-11 w-9 h-9 bg-white rounded-full hover:bg-background-primaryBg text-background-primaryBg hover:text-secondary">
+                                            <i class="fa-brands fa-instagram lg:text-lg text-sm"></i>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 text-primary flex-col lg:pt-6 pt-4">
+                                <h4>Harper Russo</h4>
+                                <p>Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3">
+                        <div class="flex flex-col group px-3 h-full" data-aos="flip-left">
+                            <div class="relative h-full">
+                                <figure class="h-full">
+                                    <img class="w-full h-full" src="assets/images/team/teamMember_2.webp"
+                                        alt="teamMember_2">
+                                </figure>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-[#00F0FF66] to-[#00F0FF66] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                </div>
+                                <div
+                                    class="absolute lg:bottom-8 bottom-6 left-0 right-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 lg:gap-4 gap-3">
+                                    <a href="#">
+                                        <figure
+                                            class="flex justify-center items-center lg:w-11 lg:h-11 w-9 h-9 bg-white rounded-full hover:bg-background-primaryBg text-background-primaryBg hover:text-secondary">
+                                            <i class="fa-brands fa-facebook-f lg:text-lg text-sm"></i>
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure
+                                            class="flex justify-center items-center lg:w-11 lg:h-11 w-9 h-9 bg-white rounded-full hover:bg-background-primaryBg text-background-primaryBg hover:text-secondary">
+                                            <i class="fa-brands fa-twitter lg:text-lg text-sm"></i>
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure
+                                            class="flex justify-center items-center lg:w-11 lg:h-11 w-9 h-9 bg-white rounded-full hover:bg-background-primaryBg text-background-primaryBg hover:text-secondary">
+                                            <i class="fa-brands fa-instagram lg:text-lg text-sm"></i>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 text-primary flex-col lg:pt-6 pt-4">
+                                <h4>Georg Lehner</h4>
+                                <p>AI Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3">
+                        <div class="flex flex-col group px-3 h-full" data-aos="flip-left">
+                            <div class="relative h-full">
+                                <figure class="h-full">
+                                    <img class="w-full h-full" src="assets/images/team/teamMember_3.webp"
+                                        alt="teamMember_3">
+                                </figure>
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-[#00F0FF66] to-[#00F0FF66] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                </div>
+                                <div
+                                    class="absolute lg:bottom-8 bottom-6 left-0 right-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 lg:gap-4 gap-3">
+                                    <a href="#">
+                                        <figure
+                                            class="flex justify-center items-center lg:w-11 lg:h-11 w-9 h-9 bg-white rounded-full hover:bg-background-primaryBg text-background-primaryBg hover:text-secondary">
+                                            <i class="fa-brands fa-facebook-f lg:text-lg text-sm"></i>
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure
+                                            class="flex justify-center items-center lg:w-11 lg:h-11 w-9 h-9 bg-white rounded-full hover:bg-background-primaryBg text-background-primaryBg hover:text-secondary">
+                                            <i class="fa-brands fa-twitter lg:text-lg text-sm"></i>
+                                        </figure>
+                                    </a>
+                                    <a href="#">
+                                        <figure
+                                            class="flex justify-center items-center lg:w-11 lg:h-11 w-9 h-9 bg-white rounded-full hover:bg-background-primaryBg text-background-primaryBg hover:text-secondary">
+                                            <i class="fa-brands fa-instagram lg:text-lg text-sm"></i>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center gap-1 text-primary flex-col lg:pt-6 pt-4">
+                                <h4>Gregor Winkler</h4>
+                                <p>Quality Assurance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of 2.3. Team -->
+    </div>
+    <!-- 1.13. Footer  -->
+    <footer class="lg:pt-[100px] md:pt-[70px] pt-[50px] border-t-[5px] border-solid border-borderColor">
+        <div class="container">
+            <div class="flex md:flex-row flex-col gap-4 justify-between">
+                <div
+                    class="flex flex-col xl:w-1/4 md:w-[30%] text-primary md:items-start items-center md:text-start text-center">
+                    <figure>
+                        <img class="w-44" src="assets/images/logo/logo.svg" alt="logo">
+                    </figure>
+                    <p class="lg:py-4 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore.</p>
+                    <h5 class="pt-3 pb-5">Social Media</h5>
+                    <div class="flex gap-4 pb-4">
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:w-[60%] md:w-[65%]">
+                    <div class="flex flex-col gap-3 w-full md:text-start text-center">
+                        <h6 class="text-primary">Subscribe To Newsletter</h6>
+                        <form class="flex lg:gap-4 gap-3 w-full md:flex-row flex-col">
+                            <input type="email" placeholder="Your email address..."
+                                class="rounded-[30px] text-primary border-[1px] border-solid border-primary bg-transparent py-3 px-5 p w-full"
+                                required name="footerMail">
+                            <button class="hover1">Subscribe</button>
+                        </form>
+                        <div id="footerModal"
+                            class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50 px-3">
+                            <div class="bg-background-blurBg rounded-lg overflow-hidden shadow-lg w-full max-w-md p-6">
+                                <img src="assets/images/icons/Confirmation_1.gif" alt="submitIcon" class="mx-auto w-24">
+                                <div class="flex flex-col gap-3 items-center text-center mt-4 text-white">
+                                    <h3 class="text-lg font-semibold">Response Submitted</h3>
+                                    <h6 class="text-sm mt-2">Your details have been successfully submitted. Thanks!</h6>
+                                </div>
+                                <button id="closeFooterModal" class="hover1 mt-8 mx-auto">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-primary my-6">
+                    <div class="flex flex-row justify-between md:gap-3 gap-6 md:flex-nowrap flex-wrap">
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-primary">Contact</h4>
+                            <ul class="flex gap-2 flex-col">
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="flex gap-3 items-center ">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p>120 West Lancashire, England</p>
+                                    </a>
+                                </li>
+                                <li class=" text-primary linkhover">
+                                    <a href="#" class="flex gap-3 items-center">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <p>support@username.com</p>
+                                    </a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="flex gap-3 items-center">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <p>(+122) 34 5678 9100</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-primary">Pages</h4>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">About</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Contact</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Pricing</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Projects</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-primary">Help</h4>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Privacy Policy</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Customer Support</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-[5px] border-[#FFFFFF33] border-solid lg:mt-[50px] md:mt-[30px] mt-[20px]">
+            <p class="lg:py-3 py-2 text-center text-primary">Copyright 2024 Evonicmedia, All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End of 1.13. Footer  -->
+
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+    <!-- aos animation of js -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>

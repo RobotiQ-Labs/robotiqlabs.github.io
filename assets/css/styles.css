@@ -1,0 +1,636 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : Evonicmedia
+Template Name: BraviusAI – AI & Robotics
+Version      :1.0                                         
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.IMPORT FONT FAMILY
+* 02.ROOT CSS STYLE
+* 03.RESET CSS STYLE
+* 04.TYPOGRAPHY CSS STYLE
+* 05.GLOBAL CSS STYLE
+* 06.HEADER CSS STYLE
+* 07.ACCORDIAN CSS STYLE
+
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.IMPORT FONT FAMILY
+* ----------------------------------------------------------------------------------------
+*/
+
+/* == Bai Jamjuree == */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* == Cabin == */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.ROOT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+:root {
+    /* Color variables */
+    --primaryColor: #ffffff;
+    --secondaryColor: #00F0FF;
+
+    /* Background color variables */
+    --background: #04070e;
+    --secondary-background: #131B26;
+    --dim-background: #0a0f18;
+    --blur-bg: #131B26B2;
+    --card-bg: #131B2666;
+
+    /* Overlay */
+    --overlay: #00F0FF66;
+
+    /* Border color variables */
+    --borderColor: #FFFFFF33;
+
+    /* Font family variables */
+    --font-main: "Bai Jamjuree", sans-serif;
+    --font-secondary: "Cabin", sans-serif;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* RESET CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+@layer base {
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a,
+    p,
+    blockquote,
+    pre,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+    }
+
+
+    html,
+    body {
+        height: 100%;
+        font-size: 100%;
+        line-height: 1.5;
+    }
+
+    img,
+    picture,
+    video,
+    canvas,
+    svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+
+    body {
+        font-family: var(--font-main), sans-serif;
+        line-height: 1;
+        background: #04070e;
+    }
+
+    ol,
+    ul {
+        list-style: none;
+    }
+
+    blockquote,
+    q {
+        quotes: none;
+    }
+
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: "";
+    }
+
+    input:focus,
+    button:focus {
+        outline: none;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    select {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        background-color: #ffffff;
+        -webkit-text-fill-color: #ffffff;
+        -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    select::-ms-expand {
+        display: none;
+    }
+
+    label {
+        font-weight: normal;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .container {
+        overflow-y: visible !important;
+    }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.TYPOGRAPHY CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+@layer components {
+
+    h1,
+    .h1 {
+        font-size: 75px;
+        line-height: 75px;
+        font-weight: 600;
+        font-family: var(--font-main);
+        letter-spacing: 0.03em;
+    }
+
+    h2,
+    .h2 {
+        font-size: 50px;
+        line-height: 75px;
+        font-weight: 600;
+        font-family: var(--font-main);
+        letter-spacing: 0.03em;
+    }
+
+    h3,
+    .h3 {
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: 600;
+        font-family: var(--font-main);
+        letter-spacing: 0.03em;
+    }
+
+    h4,
+    .h4 {
+        font-size: 28px;
+        line-height: 35px;
+        font-weight: 700;
+        font-family: var(--font-main);
+        letter-spacing: 0.02em;
+    }
+
+    h5,
+    .h5 {
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 600;
+        font-family: var(--font-main);
+        letter-spacing: 0.02em;
+    }
+
+    h6,
+    .h6 {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        font-family: var(--font-secondary);
+        letter-spacing: 0.05em;
+    }
+
+    p,
+    .p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        font-family: var(--font-secondary);
+        letter-spacing: 0.02em;
+    }
+
+    a,
+    .a {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        text-decoration: none;
+        font-family: var(--font-main);
+    }
+
+    button,
+    .button {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        font-family: var(--font-main);
+    }
+
+    @media screen and (max-width: 1023px) {
+
+        h1,
+        .h1 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        h2,
+        .h2 {
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        h3,
+        .h3 {
+            font-size: 35px;
+            line-height: 50px;
+        }
+
+        h4,
+        .h4 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        h5,
+        .h5 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        h6,
+        .h6 {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        p,
+        .p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        a,
+        .a {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        button,
+        .button {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+
+        h1,
+        .h1 {
+            font-size: 45px;
+            line-height: 45px;
+        }
+
+        h2,
+        .h2 {
+            font-size: 35px;
+            line-height: 50px;
+        }
+
+        h3,
+        .h3 {
+            font-size: 30px;
+            line-height: 45px;
+        }
+
+        h4,
+        .h4 {
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        h5,
+        .h5 {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        h6,
+        .h6 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        a,
+        .a {
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        button,
+        .button {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.GLOBAL CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+@layer components {
+    .hover1 {
+        padding: 20px 48px;
+        background-color: transparent;
+        border-radius: 40px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 0.3s ease;
+        border: 1px solid var(--secondaryColor);
+        color: var(--background);
+        z-index: 1;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+    }
+
+    .hover1::before,
+    .hover1::after {
+        content: "";
+        display: block;
+        width: 250%;
+        height: 250%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: var(--secondaryColor);
+        transition: 0.4s ease;
+    }
+
+    .hover1::before {
+        top: -16px;
+        left: -16px;
+    }
+
+    .hover1::after {
+        left: calc(100% + 16px);
+        top: calc(100% + 16px);
+    }
+
+    .hover1:hover::before,
+    .hover1:hover::after {
+        height: 50px;
+        width: 50px;
+    }
+
+    .hover1:hover {
+        color: var(--primaryColor);
+    }
+
+    .hover1:active {
+        filter: brightness(0.8);
+    }
+
+    .active,
+    .linkhover:hover {
+        color: var(--secondaryColor)
+    }
+
+    @media screen and (max-width: 767px) {
+        .hover1 {
+            padding: 14px 30px;
+            width: 100%;
+        }
+    }
+
+    .text-stroke {
+        -webkit-text-stroke: 1px #ffffff;
+        color: transparent;
+    }
+
+    .animate-paused {
+        animation-play-state: paused;
+    }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.HEADER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+@layer components {
+    .side-menu {
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .side-menu.open {
+        transform: translateX(0);
+    }
+
+    .aside-menu {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .aside-menu.open {
+        transform: translateX(0);
+    }
+
+    .search-overlay {
+        display: none;
+    }
+
+    .search-overlay.open {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, max-height 0.3s ease, visibility 0.3s ease;
+    }
+
+    .dropdown-menu.open {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        max-height: 500px;
+    }
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.ACCORDIAN CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+@layer components {
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, margin-top 0.3s ease;
+    }
+
+    .accordion-content.open {
+        margin-top: 1rem;
+    }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

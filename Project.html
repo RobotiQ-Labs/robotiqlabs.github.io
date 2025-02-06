@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="BraviusAI - AI & Robotics HTML Template">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <title>Project - BraviusAI</title>
+    <!-- Favicons  -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.svg">
+    <!-- default sheet of css -->
+    <link rel="stylesheet" href="assets/css/output.css">
+    <!-- fonts awsome icon link  -->
+    <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css">
+    <!-- animation of css -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body>
+
+    <!-- 1.1. Header  -->
+    <header class="bg-background-blurBg text-white absolute top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-6 px-6" data-aos="fade-down">
+            <figure class="flex items-center">
+                <a href="index.html">
+                    <img class="w-36" src="assets/images/logo/logo.svg" alt="logo">
+                </a>
+            </figure>
+            <nav class="hidden lg:flex space-x-8">
+                <a class="p linkhover" href="index.html">Home</a>
+                <a class="p linkhover" href="About.html">About Us</a>
+                <a class="p linkhover" href="Services.html">Services</a>
+                <a class="p linkhover" href="Blog.html">Blog</a>
+                <div class="relative dropdown">
+                    <a class="cursor-pointer p pb-3 linkhover active">Pages <i
+                            class="fa-solid fa-chevron-down text-xs"></i></a>
+                    <div
+                        class="absolute left-0 mt-2 w-48 text-primary bg-background-secondaryBg shadow-lg dropdown-menu py-3 px-2">
+                        <a class="block px-4 py-2 linkhover p active" href="Project.html">Project</a>
+                        <a class="block px-4 py-2 linkhover p" href="Pricing.html">Pricing</a>
+                        <a class="block px-4 py-2 linkhover p" href="Team.html">Team</a>
+                        <a class="block px-4 py-2 linkhover p" href="SinglePost.html">Single Post</a>
+                        <a class="block px-4 py-2 linkhover p" href="ComingSoon.html">Coming Soon</a>
+                        <a class="block px-4 py-2 linkhover p" href="Error.html">404</a>
+                    </div>
+                </div>
+                <a class="p linkhover" href="Contact.html">Contact</a>
+            </nav>
+            <div class="hidden lg:flex items-center space-x-4">
+                <i class="fas fa-search text-white cursor-pointer text-xl linkhover" onclick="toggleSearch()"></i>
+                <hr class="w-px h-7 bg-white mx-4">
+                <i class="fas fa-bars text-white cursor-pointer text-2xl linkhover" onclick="toggleMenu()"></i>
+            </div>
+            <div class="lg:hidden flex">
+                <i class="fas fa-bars text-white cursor-pointer text-2xl linkhover" onclick="toggleAside()"></i>
+            </div>
+        </div>
+        <aside
+            class="lg:hidden fixed inset-0 bg-background-primaryBg text-white transform translate-x-full transition-transform duration-300 overflow-y-scroll aside-menu z-50"
+            id="asideMenu">
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <figure> <img src="assets/images/logo/logo.svg" class="w-32 pt-3 pb-7" alt="logo"></figure>
+                    <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleAside()">
+                        <i class="fas fa-times text-3xl text-white linkhover"></i>
+                    </button>
+                </div>
+                <nav class="flex flex-col space-y-4">
+                    <a class="p linkhover" href="index.html">Home</a>
+                    <a class="p linkhover" href="About.html">About Us</a>
+                    <a class="p linkhover" href="Services.html">Services</a>
+                    <a class="p linkhover" href="Blog.html">Blog</a>
+                    <a class="p linkhover" href="Contact.html">Contact</a>
+                    <div class="relative aside-dropdown">
+                        <a class="cursor-pointer p pb-3 linkhover active">Pages <i
+                                class="fa-solid fa-chevron-down text-xs"></i></a>
+                        <div class="left-0 mt-2 w-48 text-primary rounded-lg shadow-lg dropdown-menu bg-transparent">
+                            <a class="block py-2 linkhover p active" href="Project.html">Project</a>
+                            <a class="block py-2 linkhover p" href="Pricing.html">Pricing</a>
+                            <a class="block py-2 linkhover p" href="Team.html">Team</a>
+                            <a class="block py-2 linkhover p" href="SinglePost.html">Single Post</a>
+                            <a class="block py-2 linkhover p" href="ComingSoon.html">Coming Soon</a>
+                            <a class="block py-2 linkhover p" href="Error.html">404</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+        <div id="sideMenu"
+            class="fixed top-0 right-0 pt-24 px-12 h-full bg-background-primaryBg text-white side-menu transform translate-x-full transition-transform duration-300 overflow-y-scroll z-50">
+            <div class="p-4">
+                <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleMenu()">
+                    <i class="fas fa-times text-3xl text-white linkhover"></i>
+                </button>
+                <figure>
+                    <img src="assets/images/logo/logo.svg" class="w-40" alt="logo">
+                </figure>
+                <p class="w-[min-content] min-w-96 py-10">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris
+                    nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+                <div class="flex flex-col gap-8">
+                    <a href="#" class="flex gap-4 items-center linkhover">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h6>120 West Lancashire, England </h6>
+                    </a>
+                    <a href="#" class="flex gap-4 items-center linkhover">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h6>support@username.com </h6>
+                    </a>
+                    <a href="#" class="flex gap-4 items-center linkhover">
+                        <i class="fa-solid fa-phone"></i>
+                        <h6>(+122) 34 5678 9100 </h6>
+                    </a>
+                </div>
+                <div class="py-12 flex flex-col gap-6">
+                    <h5>Get News & Updates</h5>
+                    <form action="#"
+                        class="w-full flex justify-between items-center bg-white rounded-[100px] ps-6 pe-1 py-2 text-secondary">
+                        <input type="email" placeholder="Your email..." class="text-black placeholder:text-black p"
+                            required name="sideMail" autocomplete="off">
+                        <button
+                            class="p-4 bg-secondary transition-all rounded-full h-11 w-11 flex justify-center items-center hover:text-white text-black"><i
+                                class="fa-regular fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="flex gap-4 pb-4">
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div id="searchOverlay" class="fixed inset-0 bg-background-blurBg items-center justify-center search-overlay">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleSearch()">
+                <i class="fas fa-times text-3xl text-white linkhover"></i>
+            </button>
+            <div class="p-4 rounded-lg w-3/4 lg:w-2/3 relative">
+                <form class="flex">
+                    <input
+                        class="w-full p-4 rounded-l-xl text-white bg-background-blurBg border border-solid border-secondary"
+                        placeholder="Search..." type="text" required name="search" />
+                    <button
+                        class="bg-secondary hover:bg-background text-black hover:text-secondary p-4 rounded-r-lg transition-all border border-solid border-secondary">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- End of 1.1. Header  -->
+    <!-- 2.1. SubPage_Hero -->
+    <section>
+        <div
+            class="container lg:pt-40 md:pt-36 pt-32 lg:pb-[80px] md:pb-[60px] pb-[45px] border-b-[1px] border-solid border-white text-center">
+            <div class="flex flex-col items-center justify-center text-primary lg:gap-7 gap-5" data-aos="zoom-in-up">
+                <h2>Take A Look At Our Completed Projects</h2>
+                <div class="flex items-center md:justify-start justify-center">
+                    <a href="index.html" class="linkhover">
+                        <p>HOME</p>
+                    </a>
+                    <i class="fa-solid fa-diamond text-xs p-2"></i>
+                    <p class="text-secondary">OUR PORTFOLIO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of 2.1. SubPage_Hero -->
+    <!-- 1.5. Portfolio  -->
+    <section class="lg:pt-[100px] md:pt-[70px] pt-[50px]">
+        <div class="lg:w-[95%] w-[97%] m-auto">
+            <div class="flex w-full h-auto lg:flex-row flex-col lg:pb-[100px] md:pb-[70px] pb-[50px] lg:gap-0 gap-6">
+                <div class="flex lg:w-1/2">
+                    <div class="relative group h-full w-full" data-aos="flip-left">
+                        <figure>
+                            <img class="w-full" src="assets/images/project/portfolio_1.webp" alt="portfolio_1">
+                        </figure>
+                        <div
+                            class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
+                            <a href="#">
+                                <h4 class="linkhover">AI Machine Learning</h4>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt labore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:w-1/2 h-auto lg:gap-0 gap-6">
+                    <div class="flex h-full sm:flex-row flex-col w-full lg:gap-0 gap-6">
+                        <div class="relative group h-full w-full" data-aos="flip-left">
+                            <figure class="h-full">
+                                <img class="w-full h-full" src="assets/images/project/portfolio_2.webp"
+                                    alt="portfolio_1">
+                            </figure>
+                            <div
+                                class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
+                                <a href="#" class="linkhover">
+                                    <h4>Advanced Programming</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt
+                                    labore.</p>
+                            </div>
+                        </div>
+                        <div class="relative group h-full w-full" data-aos="flip-left">
+                            <figure class="h-full w-full">
+                                <img class="w-full h-full" src="assets/images/project/portfolio_4.webp"
+                                    alt="portfolio_1">
+                            </figure>
+                            <div
+                                class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
+                                <a href="#" class="linkhover">
+                                    <h4>AI Dev</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt
+                                    labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex h-full sm:flex-row flex-col lg:gap-0 gap-6">
+                        <div class="relative group h-full w-full" data-aos="flip-left">
+                            <figure class="h-full w-full">
+                                <img class="w-full h-full" src="assets/images/project/portfolio_3.webp"
+                                    alt="portfolio_1">
+                            </figure>
+                            <div
+                                class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
+                                <a href="#" class="linkhover">
+                                    <h4>Smart House Technology</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt
+                                    labore.</p>
+                            </div>
+                        </div>
+                        <div class="relative group h-full w-full" data-aos="flip-left">
+                            <figure class="h-full w-full">
+                                <img class="w-full h-full" src="assets/images/project/portfolio_5.webp"
+                                    alt="portfolio_1">
+                            </figure>
+                            <div
+                                class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
+                                <a href="#" class="linkhover">
+                                    <h4>Big House Technology</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt
+                                    labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of 1.5. Portfolio  -->
+    <!-- 1.13. Footer  -->
+    <footer class="lg:pt-[100px] md:pt-[70px] pt-[50px] border-t-[5px] border-solid border-borderColor">
+        <div class="container">
+            <div class="flex md:flex-row flex-col gap-4 justify-between">
+                <div
+                    class="flex flex-col xl:w-1/4 md:w-[30%] text-primary md:items-start items-center md:text-start text-center">
+                    <figure>
+                        <img class="w-44" src="assets/images/logo/logo.svg" alt="logo">
+                    </figure>
+                    <p class="lg:py-4 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore.</p>
+                    <h5 class="pt-3 pb-5">Social Media</h5>
+                    <div class="flex gap-4 pb-4">
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:w-[60%] md:w-[65%]">
+                    <div class="flex flex-col gap-3 w-full md:text-start text-center">
+                        <h6 class="text-primary">Subscribe To Newsletter</h6>
+                        <form class="flex lg:gap-4 gap-3 w-full md:flex-row flex-col">
+                            <input type="email" placeholder="Your email address..."
+                                class="rounded-[30px] text-primary border-[1px] border-solid border-primary bg-transparent py-3 px-5 p w-full"
+                                required name="footerMail">
+                            <button class="hover1">Subscribe</button>
+                        </form>
+                        <div id="footerModal"
+                            class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50 px-3">
+                            <div class="bg-background-blurBg rounded-lg overflow-hidden shadow-lg w-full max-w-md p-6">
+                                <img src="assets/images/icons/Confirmation_1.gif" alt="submitIcon" class="mx-auto w-24">
+                                <div class="flex flex-col gap-3 items-center text-center mt-4 text-white">
+                                    <h3 class="text-lg font-semibold">Response Submitted</h3>
+                                    <h6 class="text-sm mt-2">Your details have been successfully submitted. Thanks!</h6>
+                                </div>
+                                <button id="closeFooterModal" class="hover1 mt-8 mx-auto">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-primary my-6">
+                    <div class="flex flex-row justify-between md:gap-3 gap-6 md:flex-nowrap flex-wrap">
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-primary">Contact</h4>
+                            <ul class="flex gap-2 flex-col">
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="flex gap-3 items-center ">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p>120 West Lancashire, England</p>
+                                    </a>
+                                </li>
+                                <li class=" text-primary linkhover">
+                                    <a href="#" class="flex gap-3 items-center">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <p>support@username.com</p>
+                                    </a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="flex gap-3 items-center">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <p>(+122) 34 5678 9100</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-primary">Pages</h4>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">About</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Contact</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Pricing</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Projects</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-primary">Help</h4>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Privacy Policy</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Customer Support</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-[5px] border-[#FFFFFF33] border-solid lg:mt-[50px] md:mt-[30px] mt-[20px]">
+            <p class="lg:py-3 py-2 text-center text-primary">Copyright 2024 Evonicmedia, All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End of 1.13. Footer  -->
+
+
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+    <!-- aos animation of js -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>

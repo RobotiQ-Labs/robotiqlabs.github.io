@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="BraviusAI, AI, Robotics, HTML Template, Artificial Intelligence, Robotics Technology, AI Solutions">
+    <meta name="robots" content="index, follow">
+    <meta name="description"
+        content="BraviusAI is a cutting-edge AI and Robotics HTML template designed for showcasing AI solutions and robotics technology.">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="BraviusAI - AI & Robotics">
+    <meta property="og:description"
+        content="BraviusAI is a cutting-edge AI and Robotics HTML template designed for showcasing AI solutions and robotics technology.">
+    <meta property="og:type" content="website">
+    <!-- title -->
+    <title>BraviusAI - AI & Robotics</title>
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.svg">
+    <!-- default sheet of css -->
+    <link rel="stylesheet" href="assets/css/output.css">
+    <!-- fonts awsome icon link  -->
+    <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css">
+    <!-- animation of css -->
+    <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body>
+
+    <!-- 1.1. Header  -->
+    <header class="bg-background-blurBg text-white absolute top-0 w-full z-50">
+        <div class="container mx-auto flex justify-between items-center py-6 px-6" data-aos="fade-down">
+            <figure class="flex items-center">
+                <a href="index.html">
+                    <img class="w-36" src="assets/images/logo/logo.svg" alt="logo">
+                </a>
+            </figure>
+            <nav class="hidden lg:flex space-x-8">
+                <a class="p linkhover active" href="index.html">Home</a>
+                <a class="p linkhover" href="About.html">About Us</a>
+                <a class="p linkhover" href="Services.html">Services</a>
+                <a class="p linkhover" href="Blog.html">Blog</a>
+                <div class="relative dropdown">
+                    <a class="cursor-pointer p pb-3 linkhover">Pages <i
+                            class="fa-solid fa-chevron-down text-xs"></i></a>
+                    <div
+                        class="absolute left-0 mt-2 w-48 text-primary bg-background-secondaryBg shadow-lg dropdown-menu py-3 px-2">
+                        <a class="block px-4 py-2 linkhover p" href="Project.html">Project</a>
+                        <a class="block px-4 py-2 linkhover p" href="Pricing.html">Pricing</a>
+                        <a class="block px-4 py-2 linkhover p" href="Team.html">Team</a>
+                        <a class="block px-4 py-2 linkhover p" href="SinglePost.html">Single Post</a>
+                        <a class="block px-4 py-2 linkhover p" href="ComingSoon.html">Coming Soon</a>
+                        <a class="block px-4 py-2 linkhover p" href="Error.html">404</a>
+                    </div>
+                </div>
+                <a class="p linkhover" href="Contact.html">Contact</a>
+            </nav>
+            <div class="hidden lg:flex items-center space-x-4">
+                <i class="fas fa-search text-white cursor-pointer text-xl linkhover" onclick="toggleSearch()"></i>
+                <hr class="w-px h-7 bg-white mx-4">
+                <i class="fas fa-bars text-white cursor-pointer text-2xl linkhover" onclick="toggleMenu()"></i>
+            </div>
+            <div class="lg:hidden flex">
+                <i class="fas fa-bars text-white cursor-pointer text-2xl linkhover" onclick="toggleAside()"></i>
+            </div>
+        </div>
+        <aside
+            class="lg:hidden fixed inset-0 bg-background-primaryBg text-white transform translate-x-full transition-transform duration-300 overflow-y-scroll aside-menu z-50"
+            id="asideMenu">
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <figure> <img src="assets/images/logo/logo.svg" class="w-32 pt-3 pb-7" alt="logo"></figure>
+                    <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleAside()">
+                        <i class="fas fa-times text-3xl text-white linkhover"></i>
+                    </button>
+                </div>
+                <nav class="flex flex-col space-y-4">
+                    <a class="p linkhover active" href="index.html">Home</a>
+                    <a class="p linkhover" href="About.html">About Us</a>
+                    <a class="p linkhover" href="Services.html">Services</a>
+                    <a class="p linkhover" href="Blog.html">Blog</a>
+                    <a class="p linkhover" href="Contact.html">Contact</a>
+                    <div class="relative aside-dropdown">
+                        <a class="cursor-pointer p pb-3 linkhover">Pages <i
+                                class="fa-solid fa-chevron-down text-xs"></i></a>
+                        <div class="left-0 mt-2 w-48 text-primary rounded-lg shadow-lg dropdown-menu bg-transparent">
+                            <a class="block py-2 linkhover p" href="Project.html">Project</a>
+                            <a class="block py-2 linkhover p" href="Pricing.html">Pricing</a>
+                            <a class="block py-2 linkhover p" href="Team.html">Team</a>
+                            <a class="block py-2 linkhover p" href="SinglePost.html">Single Post</a>
+                            <a class="block py-2 linkhover p" href="ComingSoon.html">Coming Soon</a>
+                            <a class="block py-2 linkhover p" href="Error.html">404</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+        <div id="sideMenu"
+            class="fixed top-0 right-0 pt-24 px-12 h-full bg-background-primaryBg text-white side-menu transform translate-x-full transition-transform duration-300 overflow-y-scroll z-50">
+            <div class="p-4">
+                <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleMenu()">
+                    <i class="fas fa-times text-3xl text-white linkhover"></i>
+                </button>
+                <figure>
+                    <img src="assets/images/logo/logo.svg" class="w-40" alt="logo">
+                </figure>
+                <p class="w-[min-content] min-w-96 py-10">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris
+                    nisi ut
+                    aliquip ex ea commodo consequat.
+                </p>
+                <div class="flex flex-col gap-8">
+                    <a href="#" class="flex gap-4 items-center linkhover">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h6>120 West Lancashire, England </h6>
+                    </a>
+                    <a href="#" class="flex gap-4 items-center linkhover">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h6>support@username.com </h6>
+                    </a>
+                    <a href="#" class="flex gap-4 items-center linkhover">
+                        <i class="fa-solid fa-phone"></i>
+                        <h6>(+122) 34 5678 9100 </h6>
+                    </a>
+                </div>
+                <div class="py-12 flex flex-col gap-6">
+                    <h5>Get News & Updates</h5>
+                    <form action="#"
+                        class="w-full flex justify-between items-center bg-white rounded-[100px] ps-6 pe-1 py-2 text-secondary">
+                        <input type="email" placeholder="Your email..." class="text-black placeholder:text-black p"
+                            required name="sideMail" autocomplete="off">
+                        <button
+                            class="p-4 bg-secondary transition-all rounded-full h-11 w-11 flex justify-center items-center hover:text-white text-black"><i
+                                class="fa-regular fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="flex gap-4 pb-4">
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div id="searchOverlay" class="fixed inset-0 bg-background-blurBg items-center justify-center search-overlay">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleSearch()">
+                <i class="fas fa-times text-3xl text-white linkhover"></i>
+            </button>
+            <div class="p-4 rounded-lg w-3/4 lg:w-2/3 relative">
+                <form class="flex">
+                    <input
+                        class="w-full p-4 rounded-l-xl text-white bg-background-blurBg border border-solid border-secondary"
+                        placeholder="Search..." type="text" required name="search" />
+                    <button
+                        class="bg-secondary hover:bg-background text-black hover:text-secondary p-4 rounded-r-lg transition-all border border-solid border-secondary">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- End of 1.1. Header  -->
+    <!-- 1.2. Hero  -->
+    <section class="bg-heroBg bg-cover bg-center md:pt-36 pt-32 lg:pb-[100px] md:pb-[70px] pb-[50px]">
+        <div class="container">
+            <div class="md:text-start text-center" data-aos="fade-right">
+                <h1 class="text-primary">Empowering
+                    <span class="md:flex py-4 items-center gap-2 flex-wrap">
+                        <img class="md:block hidden" src="assets/images/index/hero_img.webp" alt="heroImg"> the
+                    </span> Future With AI
+                </h1>
+                <p class="text-primary sm:pt-4 pt-3 md:pb-10 pb-4 xl:w-[40%] lg:w-[50%] md:w-[59%]">Lorem ipsum
+                    dolor sit amet,
+                    consectetur
+                    adipiscing
+                    elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <div class="flex gap-10 flex-wrap-reverse items-center md:justify-start justify-center">
+                    <div>
+                        <a href="About.html" class="hover1">
+                            Explore More
+                        </a>
+                    </div>
+                    <div class="flex flex-col text-white">
+                        <h3><span class="number" data-final-value="300">0</span>+</h3>
+                        <p>Trusted Companies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of 1.2. Hero  -->
+    <!--  1.3. Partners  -->
+    <section class="lg:py-[70px] md:py-[50px] py-[30px] border-b border-white border-solid">
+        <h1 class="hidden">Lorem ipsum dolor sit.</h1>
+        <div class="container m-auto" data-aos="zoom-in">
+            <div class="partners_Slider overflow-hidden relative group">
+                <div class="w-[calc(250px*14)] animate-scroll flex group-hover:animate-paused">
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners1.svg" alt="partners1">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners2.svg" alt="partners2">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners3.svg" alt="partners3">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners4.svg" alt="partners4">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners5.svg" alt="partners5">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners6.svg" alt="partners6">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners7.svg" alt="partners7">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners1.svg" alt="partners1">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners2.svg" alt="partners2">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners3.svg" alt="partners3">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners4.svg" alt="partners4">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners5.svg" alt="partners5">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners6.svg" alt="partners6">
+                    </div>
+                    <div class="w-60">
+                        <img class="w-36" src="assets/images/partners/partners7.svg" alt="partners7">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of 1.3. Partners  -->
+    <!-- 1.4. About  -->
+    <section class="lg:py-[100px] md:py-[70px] py-[50px]">
+        <div class="container">
+            <div class="grid lg:grid-cols-[55%_45%] md:grid-cols-[48%_48%] justify-around md:gap-0 gap-6">
+                <div class="flex text-primary flex-col xl:w-full lg:w-[90%] md:text-start text-center"
+                    data-aos="fade-up">
+                    <div class="flex items-center md:justify-start justify-center">
+                        <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                        <h6>ABOUT US</h6>
+                    </div>
+                    <h2 class="py-4">Transform Your Business With AI Technology</h2>
+                    <p class="xl:w-[93%] lg:w-[95%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="flex md:gap-8 gap-4 pt-10 flex-col">
+                        <div class="flex flex-col w-full gap-[10px]">
+                            <div class="flex justify-between">
+                                <p>Artificial Intelligence</p>
+                                <p><span class="number" data-final-value="90">0</span>%</p>
+                            </div>
+                            <!-- animate bg from 0 to the value in width  -->
+                            <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
+                                <div class="bg-secondary h-2.5 rounded-full" data-final-width="90" style="width: 0%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full gap-[10px]">
+                            <div class="flex justify-between">
+                                <p>Client Service</p>
+                                <p><span class="number" data-final-value="71">0</span>%</p>
+                            </div>
+                            <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
+                                <div class="bg-secondary h-2.5 rounded-full" data-final-width="71" style="width: 0%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col w-full gap-[10px]">
+                            <div class="flex justify-between">
+                                <p>Quality</p>
+                                <p><span class="number" data-final-value="85">0</span>%</p>
+                            </div>
+                            <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
+                                <div class="bg-secondary h-2.5 rounded-full" data-final-width="85" style="width: 0%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:mt-14 md:mt-10 mt-6">
+                        <a href="About.html" class="hover1">More About</a>
+                    </div>
+                </div>
+                <div class="w-full flex lg:justify-end justify-center">
+                    <figure>
+                        <img class="w-fit" src="assets/images/index/about_Img.webp" alt="about_Img"
+                            data-aos="zoom-in-up">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of 1.4. About  -->
+    <!-- 1.5. Portfolio  -->
+    <section>
+        <div class="lg:w-[95%] w-[97%] m-auto">
+            <div class="flex items-center justify-center text-center flex-col text-primary" data-aos="fade-up">
+                <div class="flex items-center md:justify-start justify-center">
+                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                    <h6>OUR PORTFOLIO</h6>
+                </div>
+                <h2 class="pt-4 pb-11">Take A Look At Our Completed Projects</h2>
+            </div>
+            <div class="flex w-full h-auto lg:flex-row flex-col lg:pb-[100px] md:pb-[70px] pb-[50px] lg:gap-0 gap-6">
+                <div class="flex lg:w-1/2">
+                    <div class="relative group h-full w-full" data-aos="flip-left">
+                        <figure>
+                            <img class="w-full" src="assets/images/index/portfolio_1.webp" alt="portfolio_1">
+                        </figure>
+                        <div
+                            class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
+                            <a href="Project.html">
+                                <h4 class="linkhover">AI Machine Learning</h4>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt labore.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:w-1/2 h-auto lg:gap-0 gap-6">
+                    <div class="flex h-full sm:flex-row flex-col w-full lg:gap-0 gap-6">
+                        <div class="relative group h-full w-full" data-aos="flip-left">
+                            <figure class="h-full">
+                                <img class="w-full h-full" src="assets/images/index/portfolio_2.webp" alt="portfolio_1">
+                            </figure>
+                            <div
+                                class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
+                                <a href="Project.html" class="linkhover">
+                                    <h4>Advanced Programming</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt
+                                    labore.</p>
+                            </div>
+                        </div>
+                        <div class="relative group h-full w-full" data-aos="flip-left">
+                            <figure class="h-full w-full">
+                                <img class="w-full h-full" src="assets/images/index/portfolio_4.webp" alt="portfolio_1">
+                            </figure>
+                            <div
+                                class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
+                                <a href="Project.html" class="linkhover">
+                                    <h4>AI Dev</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt
+                                    labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex h-full sm:flex-row flex-col lg:gap-0 gap-6">
+                        <div class="relative group h-full w-full" data-aos="flip-left">
+                            <figure class="h-full w-full">
+                                <img class="w-full h-full" src="assets/images/index/portfolio_3.webp" alt="portfolio_1">
+                            </figure>
+                            <div
+                                class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
+                                <a href="Project.html" class="linkhover">
+                                    <h4>Smart House Technology</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt
+                                    labore.</p>
+                            </div>
+                        </div>
+                        <div class="relative group h-full w-full" data-aos="flip-left">
+                            <figure class="h-full w-full">
+                                <img class="w-full h-full" src="assets/images/index/portfolio_5.webp" alt="portfolio_1">
+                            </figure>
+                            <div
+                                class="absolute md:bottom-8 bottom-4 left-[5%] flex flex-col justify-center p-6 bg-[#131B2699] backdrop-blur-[54px] w-[90%] transform -translate-y-1/2 transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-primary">
+                                <a href="Project.html" class="linkhover">
+                                    <h4>Big House Technology</h4>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt
+                                    labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex text-primary items-center w-[95%] m-auto justify-between md:flex-row flex-col md:gap-0 gap-6 lg:pb-[100px] md:pb-[70px] pb-[50px]"
+            data-aos="zoom-in-up">
+            <h6 class="xl::text-[60px] lg:text-[45px] md:text-[35px] text-[30px] text-stroke w-max">Skilled Experts</h6>
+            <i class="fa-solid fa-diamond text-stroke lg:text-4xl md:xl"></i>
+            <h6 class="xl:text-[60px] lg:text-[45px] md:text-[35px] text-[30px] text-stroke w-max">Creativity</h6>
+            <i class="fa-solid fa-diamond text-stroke lg:text-4xl md:xl:"></i>
+            <h6 class="xl:text-[60px] lg:text-[45px] md:text-[35px] text-[30px] text-stroke w-max">Magical World</h6>
+        </div>
+    </section>
+    <!-- End of 1.5. Portfolio  -->
+    <div class="bg-background-dim border-y-[5px] border-borderColor border-solid">
+        <!-- 1.6. Services  -->
+        <section class="lg:py-[100px] md:py-[70px] py-[50px]">
+            <div class="lg:w-[90%] w-[95%] m-auto">
+                <div class="flex items-center justify-center text-center flex-col text-primary" data-aos="fade-up">
+                    <div class="flex items-center md:justify-start justify-center">
+                        <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                        <h6>OUR SERVICES</h6>
+                    </div>
+                    <h2 class="pt-4 md:pb-11 pb-8">Explore Best AI Services</h2>
+                </div>
+                <div class="flex lg:flex-row lg:flex-nowrap flex-wrap justify-center lg:gap-y-0 gap-y-6">
+                    <div class="lg:w-1/4 md:w-1/2 md:px-3">
+                        <div class="relative group h-full" data-aos="flip-left">
+                            <div class="relative h-full">
+                                <figure class="h-full">
+                                    <img class="w-full h-full relative top-0 left-0"
+                                        src="assets/images/index/services_1.webp" alt="services_1">
+                                    <div class="absolute top-0 left-0 w-full h-full"
+                                        style="background: linear-gradient(180deg, rgba(4, 7, 14, 0) 0%, rgba(4, 7, 14, 0.8) 100%);">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div
+                                class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
+                                <a href="Services.html" class="linkhover">
+                                    <h4 class="transition-all group-hover:translate-y-[-20%]">Robotic Automation</h4>
+                                </a>
+                                <p class="hidden group-hover:block transition-all">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    elit,
+                                    sed do eiusmod tempor incididunt labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 md:px-3">
+                        <div class="relative group h-full" data-aos="flip-left">
+                            <div class="relative h-full">
+                                <figure class="h-full">
+                                    <img class="w-full h-full relative top-0 left-0"
+                                        src="assets/images/index/services_2.webp" alt="services_2">
+                                    <div class="absolute top-0 left-0 w-full h-full"
+                                        style="background: linear-gradient(180deg, rgba(4, 7, 14, 0) 0%, rgba(4, 7, 14, 0.8) 100%);">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div
+                                class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
+                                <a href="Services.html" class="linkhover">
+                                    <h4 class="transition-all group-hover:translate-y-[-20%]">AI For Conversation</h4>
+                                </a>
+                                <p class="hidden group-hover:block transition-all">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    elit,
+                                    sed do eiusmod tempor incididunt labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 md:px-3">
+                        <div class="relative group h-full" data-aos="flip-left">
+                            <div class="relative h-full">
+                                <figure class="h-full">
+                                    <img class="w-full h-full relative top-0 left-0"
+                                        src="assets/images/index/services_3.webp" alt="services_3">
+                                    <div class="absolute top-0 left-0 w-full h-full"
+                                        style="background: linear-gradient(180deg, rgba(4, 7, 14, 0) 0%, rgba(4, 7, 14, 0.8) 100%);">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div
+                                class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
+                                <a href="Services.html" class="linkhover">
+                                    <h4 class="transition-all group-hover:translate-y-[-20%]">Machine Learning</h4>
+                                </a>
+                                <p class="hidden group-hover:block transition-all">Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    elit,
+                                    sed do eiusmod tempor incididunt labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4  md:w-1/2 md:px-3">
+                        <div class="relative group h-full" data-aos="flip-left">
+                            <div class="relative h-full">
+                                <figure class="h-full">
+                                    <img class="w-full h-full relative top-0 left-0"
+                                        src="assets/images/index/services_4.webp" alt="services_4">
+                                    <div class="absolute top-0 left-0 w-full h-full"
+                                        style="background: linear-gradient(180deg, rgba(4, 7, 14, 0) 0%, rgba(4, 7, 14, 0.8) 100%);">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div
+                                class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
+                                <a href="Services.html" class="linkhover">
+                                    <h4 class="transition-all group-hover:translate-y-[-20%]">Cyber Security</h4>
+                                </a>
+                                <p class="hidden group-hover:block transition-all duration-500 ease-in-out">Lorem ipsum
+                                    dolor
+                                    sit amet, consectetur elit,
+                                    sed do eiusmod tempor incididunt labore.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center md:pt-16 pt-8 px-3">
+                    <a href="Services.html" class="hover1">View All</a>
+                </div>
+            </div>
+        </section>
+        <!-- End of 1.6. Services  -->
+        <!-- 1.7. WhyUs  -->
+        <section>
+            <div class="container">
+                <div class="flex lg:flex-row flex-col-reverse lg:gap-4 gap-6 lg:justify-between justify-center">
+                    <div class="xl:w-[42%] lg:w-[40%] flex lg:justify-start justify-center">
+                        <figure class="w-fit">
+                            <img class="w-full" src="assets/images/index/whyUs.webp" alt="wayus" data-aos="zoom-in-up">
+                        </figure>
+                    </div>
+                    <div class="xl:w-[58%] lg:w-[60%]">
+                        <div class="flex lg:text-start text-center flex-col text-primary lg:items-start items-center">
+                            <div class="lg:pb-8 pb-6" data-aos="fade-up">
+                                <div class="flex items-center lg:justify-start justify-center">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <h6>WHY US</h6>
+                                </div>
+                                <h3 class="pt-4 md:pb-4 pb-3 xl:w-[85%]">Innovate, Ignite, Invent: Your AI
+                                    Business Companion</h3>
+                                <p class="xl:w-[85%]">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                    blanditiis praesentium sint
+                                    voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.</p>
+                            </div>
+                            <div class="flex gap-6 flex-col">
+                                <div class="flex lg:gap-7 gap-5 lg:flex-row flex-col lg:items-start items-center md:px-0 px-3 group"
+                                    data-aos="fade-up">
+                                    <figure>
+                                        <img class="w-12 pt-2 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
+                                            src="assets/images/icons/solution.svg" alt="solution">
+                                    </figure>
+                                    <div class="flex flex-col gap-1">
+                                        <h5 class="group-hover:text-secondary">Smart Solution</h5>
+                                        <p class="lg:w-[65%]">Lorem ipsum dolor sit amet, dui consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod tempor.</p>
+                                    </div>
+                                </div>
+                                <div class="flex lg:gap-7 gap-5 lg:flex-row flex-col lg:items-start items-center md:px-0 px-3 group"
+                                    data-aos="fade-up">
+                                    <figure>
+                                        <img class="w-12 pt-2 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
+                                            src="assets/images/icons/reliability.svg" alt="solution">
+                                    </figure>
+                                    <div class="flex flex-col gap-1">
+                                        <h5 class="group-hover:text-secondary">Better Reliability</h5>
+                                        <p class="lg:w-[65%]">Lorem ipsum dolor sit amet, dui consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod
+                                            tempor.</p>
+                                    </div>
+                                </div>
+                                <div class="flex lg:gap-7 gap-5 lg:flex-row flex-col lg:items-start items-center md:px-0 px-3 group"
+                                    data-aos="fade-up">
+                                    <figure>
+                                        <img class="w-12 pt-2 transition-transform duration-300 ease-in-out group-hover:-translate-y-2"
+                                            src="assets/images/icons/integration.svg" alt="solution">
+                                    </figure>
+                                    <div class="flex flex-col gap-1">
+                                        <h5 class="group-hover:text-secondary">Easy Integration</h5>
+                                        <p class="lg:w-[65%]">Lorem ipsum dolor sit amet, dui consectetur adipiscing
+                                            elit,
+                                            sed do eiusmod
+                                            tempor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:mt-10 mt-7 flex lg:justify-start justify-center">
+                                <a href="About.html" class="hover1">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of 1.7. WhyUs  -->
+        <!-- 1.8. Pricing  -->
+        <section class="lg:py-[100px] md:py-[70px] py-[50px]">
+            <div class="flex items-center justify-center text-center flex-col text-primary" data-aos="fade-up">
+                <div class="flex items-center ">
+                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                    <h6>PRICING PLANS</h6>
+                </div>
+                <h2 class="pt-2 md:pb-11 pb-8">Flexible Pricing Plans for AI</h2>
+            </div>
+            <div class="container">
+                <div class="flex lg:gap-7 gap-5 md:flex-row flex-col">
+                    <div class="flex flex-col gap-2 md:w-1/3 lg:p-9 md:p-6 p-5 bg-[#131B2666] border-[1px] border-solid border-[#717171] text-primary group"
+                        data-aos="flip-left">
+                        <h3 class="pt-2 group-hover:text-secondary">Free</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                        <div class="flex items-center gap-1 lg:pb-3 pb-2">
+                            <h2>$<span class="number" data-final-value="0">0</span></h2>
+                            <p class="mb-3">/ month</p>
+                        </div>
+                        <hr>
+                        <ul class="lg:pt-8 md:pt-6 pt-4 flex flex-col lg:gap-5 gap-3">
+                            <li>
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>Requirement Analysis</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>AI Strategy Development</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>AI Solution Design</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>Data Preparation</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>Performance Evaluation</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="lg:mt-10 md:mt-7 mt-5">
+                            <a href="Pricing.html" class="hover1 w-full">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 md:w-1/3 lg:p-9 md:p-6 p-5 bg-[#131B2666] border-[1px] border-solid border-[#717171] text-primary group"
+                        data-aos="flip-left">
+                        <h3 class="pt-2 group-hover:text-secondary">Standard</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                        <div class="flex items-center gap-1 lg:pb-3 pb-2">
+                            <h2>$<span class="number" data-final-value="29">0</span></h2>
+                            <p class="mb-3">/ month</p>
+                        </div>
+                        <hr>
+                        <ul class="lg:pt-8 md:pt-6 pt-4 flex flex-col lg:gap-5 gap-3">
+                            <li>
+                                <div class="flex items-center ">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>Requirement Analysis</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center ">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>AI Strategy Development</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center ">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>AI Solution Design</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center ">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>Data Preparation</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center ">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>Performance Evaluation</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="lg:mt-10 md:mt-7 mt-5">
+                            <a href="Pricing.html" class="hover1 w-full">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 md:w-1/3 lg:p-9 md:p-6 p-5 bg-[#131B2666] border-[1px] border-solid border-[#717171] text-primary group"
+                        data-aos="flip-left">
+                        <h3 class="pt-2 group-hover:text-secondary">Advanced</h3>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                        <div class="flex items-center gap-1 lg:pb-3 pb-2">
+                            <h2>$<span class="number" data-final-value="59">0</span></h2>
+                            <p class="mb-3">/ month</p>
+                        </div>
+                        <hr>
+                        <ul class="lg:pt-8 md:pt-6 pt-4 flex flex-col lg:gap-5 gap-3">
+                            <li>
+                                <div class="flex items-center ">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>Requirement Analysis</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center ">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>AI Strategy Development</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center ">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>AI Solution Design</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center ">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>Data Preparation</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex items-center ">
+                                    <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                    <p>Performance Evaluation</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="lg:mt-10 md:mt-7 mt-5">
+                            <a href="Pricing.html" class="hover1 w-full">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of 1.8. Pricing  -->
+    </div>
+    <!-- 1.9. Testimional  -->
+    <section class="lg:py-[100px] md:py-[70px] py-[50px]">
+        <div class="container">
+            <div class="flex gap-4 md:flex-row flex-col">
+                <div class="flex md:w-1/2">
+                    <div class="lg:pb-8 pb-6 text-primary md:text-start text-center flex flex-col md:items-start items-center"
+                        data-aos="fade-up">
+                        <div class="flex items-center md:justify-start justify-center">
+                            <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                            <h6>TESTIMONIALS</h6>
+                        </div>
+                        <h3 class="pt-4 md:pb-4 pb-3">What People Say</h3>
+                        <p class="xl:w-[80%]">At vero eos et accusamus et iusto odio dignissimos ducimus qui et
+                            blanditiis praesentium sint voluptatum deleniti atque corrupti.</p>
+                        <div class="flex gap-2 lg:pt-10 pt-7 items-center">
+                            <div class="flex flex-col md:items-start items-center md:text-start text-center">
+                                <figure>
+                                    <img class="w-16 mb-1" src="assets/images/icons/prize.svg" alt="prize">
+                                </figure>
+                                <h2><span class="number" data-final-value="15">0</span>+</h2>
+                                <p>Years Of Experience</p>
+                            </div>
+                            <hr class="w-[0.5px] h-44 bg-white md:mx-8 mx-4">
+                            <div class="flex flex-col md:items-start items-center md:text-start text-center">
+                                <figure>
+                                    <img class="w-16 mb-1" src="assets/images/icons/worldwide.svg" alt="prize">
+                                </figure>
+                                <h2><span class="number" data-final-value="150">0</span>K+</h2>
+                                <p>Worldwide User</p>
+                            </div>
+                        </div>
+                        <div class="flex lg:gap-12 gap-8 items-center lg:pt-14 pt-10 flex-wrap justify-center">
+                            <div>
+                                <a href="Services.html" class="hover1">Learn More</a>
+                            </div>
+                            <div>
+                                <a class="flex gap-4 items-center" href="#">
+                                    <figure
+                                        class="flex items-center justify-center w-10 h-10 rounded-full bg-secondary animate-pulse">
+                                        <i class="fa fa-play text-[#04070E] text-sm"></i>
+                                    </figure>
+                                    <p>Watch Intro</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex md:w-1/2 flex-col gap-7">
+                    <div class="flex lg:py-10 py-8 lg:px-8 px-6 gap-8  bg-[#131B2666] border-[1px] border-solid border-[#717171] text-primary xl:w-[85%] lg:w-[90%] sm:flex-row flex-col sm:items-start items-center sm:text-start text-center group"
+                        data-aos="flip-left">
+                        <figure>
+                            <img class="rounded-full md:w-44 w-[90px]" src="assets/images/index/testimional_img1.webp"
+                                alt="testimional_img1">
+                        </figure>
+                        <div class="flex gap-2 flex-col">
+                            <figure class="flex gap-2 sm:justify-start justify-center text-yellow-300">
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                            </figure>
+                            <p>“Lorem ipsum dolor sit amet, consectetur ea dui adipiscing elit, sed do eiusmod tempor.”
+                            </p>
+                            <p class="lg:text-[14px] text-[12px]">
+                                <span class="group-hover:text-secondary">Harper Russo</span> / Project Manager
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex lg:py-10 py-8 lg:px-8 px-6 gap-8  bg-[#131B2666] border-[1px] border-solid border-[#717171] text-primary xl:w-[85%] lg:w-[90%] self-end sm:flex-row flex-col sm:items-start items-center sm:text-start text-center group"
+                        data-aos="flip-left">
+                        <figure>
+                            <img class="rounded-full md:w-44 w-[90px]" src="assets/images/index/testimional_img3.webp"
+                                alt="testimional_img1">
+                        </figure>
+                        <div class="flex gap-2 flex-col">
+                            <figure class="flex gap-2 sm:justify-start justify-center text-yellow-300">
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                            </figure>
+                            <p>“Lorem ipsum dolor sit amet, consectetur ea dui adipiscing elit, sed do eiusmod tempor.”
+                            </p>
+                            <p class="lg:text-[14px] text-[12px]">
+                                <span class="group-hover:text-secondary">Simon Fischer</span>
+                                /
+                                Project Manager
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex lg:py-10 py-8 lg:px-8 px-6 gap-8  bg-[#131B2666] border-[1px] border-solid border-[#717171] text-primary xl:w-[85%] lg:w-[90%] sm:flex-row flex-col sm:items-start items-center sm:text-start text-center group"
+                        data-aos="flip-left">
+                        <figure>
+                            <img class="rounded-full md:w-44 w-[90px]" src="assets/images/index/testimional_img2.webp"
+                                alt="testimional_img1">
+                        </figure>
+                        <div class="flex gap-2 flex-col">
+                            <figure class="flex gap-2 sm:justify-start justify-center text-yellow-300">
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                                <i class="fa fa-star text-[12px]"></i>
+                            </figure>
+                            <p>“Lorem ipsum dolor sit amet, consectetur ea dui adipiscing elit, sed do eiusmod tempor.”
+                            </p>
+                            <p class="lg:text-[14px] text-[12px]">
+                                <span class="group-hover:text-secondary">Gabriel Wolf</span>
+                                /
+                                Project Manager
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of 1.9. Testimional  -->
+    <!-- 1.10. CTA  -->
+    <section class="mx-auto lg:mb-[100px] md:mb-[70px] mb-[50px] bg-ctaBg bg-no-repeat bg-center lg:w-[95%] w-[95%]">
+        <div class="container">
+            <div class="flex md:gap-4 gap-10 md:flex-row flex-col lg:py-32 md:py-24 py-16">
+                <div class="flex md:w-1/2 justify-center" data-aos="fade-up">
+                    <div class="text-primary md:text-start text-center flex flex-col md:items-start items-center">
+                        <div class="flex items-center md:justify-start justify-center">
+                            <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                            <h6>AI KNOWLEDGE HUB</h6>
+                        </div>
+                        <h2 class="pt-4 md:pb-4 pb-3 xl:w-[90%]">Unlock The Potential Of AI And Robotics</h2>
+                        <div class="lg:mt-6 mt-4">
+                            <a href="Pricing.html" class="hover1">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex md:w-1/2 justify-center items-center">
+                    <a id="openVideoModal" class="flex gap-4 items-center group transition-all" data-aos="zoom-in-up">
+                        <figure
+                            class="flex items-center justify-center md:w-24 w-20 h-20 md:h-24 rounded-full bg-primary animate-pulse group-hover:bg-secondary">
+                            <i class="fa fa-play text-background-primaryBg  md:text-4xl text-2xl"></i>
+                        </figure>
+                    </a>
+                    <!-- videoModal -->
+                    <div id="videoModal"
+                        class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50">
+                        <div class="rounded-lg overflow-hidden shadow-lg w-full max-w-3xl">
+                            <button id="closeModal"
+                                class="absolute top-5 right-5 text-gray-500 hover:text-gray-700 z-50">
+                                <i class="fa-solid fa-xmark text-3xl text-white hover:text-secondary"></i>
+                            </button>
+                            <div class="relative p-4 animate-slideFadeTwistEntrance">
+                                <iframe src="https://www.youtube.com/embed/u31qwQUeGuM?si=o1Nt3XrgyYRKwJ13"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                                    class="w-full h-64 md:h-96 border-0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of 1.10. CTA  -->
+    <div class="bg-background-dim border-t-[5px] border-borderColor border-solid">
+        <!-- 1.11. FAQ  -->
+        <section class="lg:pt-[100px] md:pt-[70px] pt-[50px]">
+            <div class="container">
+                <div class="flex md:gap-4 gap-6 md:flex-row flex-col">
+                    <div class="flex flex-col md:w-1/2">
+                        <div class="pb-2 text-primary md:text-start text-center flex flex-col md:items-start items-center"
+                            data-aos="fade-up">
+                            <div class="flex items-center md:justify-start justify-center">
+                                <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                <h6>FAQ’s</h6>
+                            </div>
+                            <h3 class="pt-3 md:pb-5 pb-3 lg:w-[90%]">Frequently Asked Questions</h3>
+                        </div>
+                        <div class="accordion lg:w-[90%]" data-aos="fade-up">
+                            <div class="accordion-item border-b border-gray-200 flex flex-col">
+                                <button
+                                    class="accordion-header w-full text-left bg-transparent focus:outline-none text-primary h6 active">
+                                    <i class="fa fa-minus me-3"></i>
+                                    Lorem ipsum dolor sit amet consectetur?
+                                </button>
+                                <div class="accordion-content text-primary">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dui
+                                        tempor
+                                        incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>
+                                </div>
+                            </div>
+                            <hr class="text-primary md:my-6 my-4">
+                            <div class="accordion-item border-b border-gray-200 flex flex-col">
+                                <button
+                                    class="accordion-header w-full text-left bg-transparent focus:outline-none text-primary h6">
+                                    <i class="fa fa-plus me-3"></i>
+                                    Lorem ipsum dolor sit amet consectetur?
+                                </button>
+                                <div class="accordion-content text-primary">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dui
+                                        tempor
+                                        incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>
+                                </div>
+                            </div>
+                            <hr class="text-primary md:my-6 my-4">
+                            <div class="accordion-item border-b border-gray-200 flex flex-col">
+                                <button
+                                    class="accordion-header w-full text-left bg-transparent focus:outline-none text-primary h6">
+                                    <i class="fa fa-plus me-3"></i>
+                                    Lorem ipsum dolor sit amet consectetur?
+                                </button>
+                                <div class="accordion-content text-primary">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dui
+                                        tempor
+                                        incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>
+                                </div>
+                            </div>
+                            <hr class="text-primary md:my-6 my-4">
+                            <div class="accordion-item border-b border-gray-200 flex flex-col">
+                                <button
+                                    class="accordion-header w-full text-left bg-transparent focus:outline-none text-primary h6">
+                                    <i class="fa fa-plus me-3"></i>
+                                    Lorem ipsum dolor sit amet consectetur?
+                                </button>
+                                <div class="accordion-content text-primary">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dui
+                                        tempor
+                                        incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>
+                                </div>
+                            </div>
+                            <hr class="text-primary md:my-6 my-4">
+                            <div class="accordion-item border-b border-gray-200 flex flex-col">
+                                <button
+                                    class="accordion-header w-full text-left bg-transparent focus:outline-none text-primary h6">
+                                    <i class="fa fa-plus me-3"></i>
+                                    Lorem ipsum dolor sit amet consectetur?
+                                </button>
+                                <div class="accordion-content text-primary">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod dui
+                                        tempor
+                                        incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>
+                                </div>
+                            </div>
+                            <hr class="text-primary md:my-6 my-4">
+                        </div>
+                    </div>
+                    <div class="flex md:w-1/2">
+                        <figure class="w-full">
+                            <img class="w-full" src="assets/images/index/faq_img.webp" alt="faq_img"
+                                data-aos="zoom-in-up">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of 1.11. FAQ  -->
+        <!-- 1.12. Blog  -->
+        <section class="lg:py-[100px] md:py-[70px] py-[50px]">
+            <div class="container">
+                <div class="flex items-center justify-center text-center flex-col text-primary" data-aos="fade-up">
+                    <div class="flex items-center md:justify-start justify-center">
+                        <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                        <h6>OUR BLOGS</h6>
+                    </div>
+                    <h2 class="pt-4 md:pb-11 pb-8">Latest News & Articles</h2>
+                </div>
+                <div class="flex md:flex-row flex-col gap-4">
+                    <div class="flex md:w-1/3">
+                        <div class="relative group h-full w-full" data-aos="flip-left">
+                            <div class="relative h-full">
+                                <figure class="h-full">
+                                    <img class="w-full h-full relative top-0 left-0"
+                                        src="assets/images/index/blog_1.webp" alt="blog_1">
+                                    <div class="absolute top-0 left-0 w-full h-full"
+                                        style="background: linear-gradient(180deg, rgba(4, 7, 14, 0) 0%, rgba(4, 7, 14, 0.6) 100%);">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div
+                                class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
+                                <div class="transition-all group-hover:translate-y-[-20%] flex flex-col">
+                                    <div class="flex items-center md:justify-start justify-center">
+                                        <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                        <p>April 25, 2024</p>
+                                    </div>
+                                    <h5 class=" md:text-start text-center"><a href="Blog.html"
+                                            class="h5 hover:text-secondary">
+                                            Transforming Industries And Changing Lives With AI
+                                        </a></h5>
+                                </div>
+                                <div class="hidden group-hover:block transition-all">
+                                    <a href="Blog.html"
+                                        class="flex gap-2 items-center h6 font-main hover:text-secondary md:justify-start justify-center">Read
+                                        More
+                                        <i class="fa-solid fa-angles-right text-sm"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex md:w-1/3">
+                        <div class="relative group h-full w-full" data-aos="flip-left">
+                            <div class="relative h-full">
+                                <figure class="h-full">
+                                    <img class="w-full h-full relative top-0 left-0"
+                                        src="assets/images/index/blog_2.webp" alt="blog_1">
+                                    <div class="absolute top-0 left-0 w-full h-full"
+                                        style="background: linear-gradient(180deg, rgba(4, 7, 14, 0) 0%, rgba(4, 7, 14, 0.6) 100%);">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div
+                                class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
+                                <div class="transition-all group-hover:translate-y-[-20%] flex flex-col">
+                                    <div class="flex items-center md:justify-start justify-center">
+                                        <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                        <p>April 25, 2024</p>
+                                    </div>
+                                    <h5 class=" md:text-start text-center"><a href="Blog.html"
+                                            class="h5 hover:text-secondary">
+                                            How AI Is Changing The Face Of Digital Marketing
+                                        </a></h5>
+                                </div>
+                                <div class="hidden group-hover:block transition-all">
+                                    <a href="Blog.html"
+                                        class="flex gap-2 items-center h6 font-main hover:text-secondary md:justify-start justify-center">Read
+                                        More
+                                        <i class="fa-solid fa-angles-right text-sm"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex md:w-1/3">
+                        <div class="relative group h-full w-full" data-aos="flip-left">
+                            <div class="relative h-full">
+                                <figure class="h-full">
+                                    <img class="w-full h-full relative top-0 left-0"
+                                        src="assets/images/index/blog_3.webp" alt="blog_1">
+                                    <div class="absolute top-0 left-0 w-full h-full"
+                                        style="background: linear-gradient(180deg, rgba(4, 7, 14, 0) 0%, rgba(4, 7, 14, 0.6) 100%);">
+                                    </div>
+                                </figure>
+                            </div>
+                            <div
+                                class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
+                                <div class="transition-all group-hover:translate-y-[-20%] flex flex-col">
+                                    <div class="flex items-center md:justify-start justify-center">
+                                        <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
+                                        <p>April 25, 2024</p>
+                                    </div>
+                                    <h5 class="md:text-start text-center"><a href="Blog.html"
+                                            class="h5 hover:text-secondary">
+                                            Exploring The Ethics Of AI And Robotics In Society
+                                        </a></h5>
+                                </div>
+                                <div class="hidden group-hover:block transition-all">
+                                    <a href="Blog.html"
+                                        class="flex gap-2 items-center h6 font-main hover:text-secondary md:justify-start justify-center">Read
+                                        More
+                                        <i class="fa-solid fa-angles-right text-sm"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of 1.12. Blog  -->
+    </div>
+    <!-- 1.13. Footer  -->
+    <footer class="lg:pt-[100px] md:pt-[70px] pt-[50px] border-t-[5px] border-solid border-borderColor">
+        <div class="container">
+            <div class="flex md:flex-row flex-col gap-4 justify-between">
+                <div
+                    class="flex flex-col xl:w-1/4 md:w-[30%] text-primary md:items-start items-center md:text-start text-center">
+                    <figure>
+                        <img class="w-44" src="assets/images/logo/logo.svg" alt="logo">
+                    </figure>
+                    <p class="lg:py-4 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore.</p>
+                    <h5 class="pt-3 pb-5">Social Media</h5>
+                    <div class="flex gap-4 pb-4">
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:w-[60%] md:w-[65%]">
+                    <div class="flex flex-col gap-3 w-full md:text-start text-center">
+                        <h6 class="text-primary">Subscribe To Newsletter</h6>
+                        <form class="flex lg:gap-4 gap-3 w-full md:flex-row flex-col">
+                            <input type="email" placeholder="Your email address..."
+                                class="rounded-[30px] text-primary border-[1px] border-solid border-primary bg-transparent py-3 px-5 p w-full"
+                                required name="footerMail">
+                            <button class="hover1">Subscribe</button>
+                        </form>
+                        <div id="footerModal"
+                            class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50 px-3">
+                            <div class="bg-background-blurBg rounded-lg overflow-hidden shadow-lg w-full max-w-md p-6">
+                                <img src="assets/images/icons/Confirmation_1.gif" alt="submitIcon" class="mx-auto w-24">
+                                <div class="flex flex-col gap-3 items-center text-center mt-4 text-white">
+                                    <h3 class="text-lg font-semibold">Response Submitted</h3>
+                                    <h6 class="text-sm mt-2">Your details have been successfully submitted. Thanks!</h6>
+                                </div>
+                                <button id="closeFooterModal" class="hover1 mt-8 mx-auto">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="text-primary my-6">
+                    <div class="flex flex-row justify-between md:gap-3 gap-6 md:flex-nowrap flex-wrap">
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-primary">Contact</h4>
+                            <ul class="flex gap-2 flex-col">
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="flex gap-3 items-center ">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p>120 West Lancashire, England</p>
+                                    </a>
+                                </li>
+                                <li class=" text-primary linkhover">
+                                    <a href="#" class="flex gap-3 items-center">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <p>support@username.com</p>
+                                    </a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="flex gap-3 items-center">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <p>(+122) 34 5678 9100</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-primary">Pages</h4>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">About</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Contact</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Pricing</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Projects</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h4 class="text-primary">Help</h4>
+                            <ul class="flex flex-col gap-2">
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Privacy Policy</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Customer Support</a>
+                                </li>
+                                <li class="text-primary linkhover">
+                                    <a href="#" class="p">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-[5px] border-[#FFFFFF33] border-solid lg:mt-[50px] md:mt-[30px] mt-[20px]">
+            <p class="lg:py-3 py-2 text-center text-primary">Copyright 2024 Evonicmedia, All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- End of 1.13. Footer  -->
+
+    <!-- main javascript -->
+    <script src="assets/js/custom.js"></script>
+    <!-- aos animation of js -->
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>
