@@ -42,7 +42,7 @@ Version      :1.0
 :root {
   /* Color variables */
   --primaryColor: #ffffff;
-  --secondaryColor: #00F0FF;
+  --secondaryColor: #0033d9;
   /* Background color variables */
   --background: #04070e;
   --secondary-background: #131B26;
@@ -50,7 +50,7 @@ Version      :1.0
   --blur-bg: #131B26B2;
   --card-bg: #131B2666;
   /* Overlay */
-  --overlay: #00F0FF66;
+  --overlay: #0033d9;
   /* Border color variables */
   --borderColor: #FFFFFF33;
   /* Font family variables */
