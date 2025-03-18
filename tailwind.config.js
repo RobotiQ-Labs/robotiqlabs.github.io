@@ -46,7 +46,7 @@ module.exports = {
       },
       backgroundImage: {
         heroBg: "url('../images/bg/hero_bg.png')",
-        ctaBg: "url('../images/bg/cta.webp')",
+        ctaBg: "url('../images/bg/cta.png')",
         comingSoonBg: "url('../images/bg/comingSoon_bg.webp')",
       },
       keyframes: {
