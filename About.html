@@ -26,10 +26,11 @@
     <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css">
     <!-- CSS Animations -->
     <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- Language Switcher Script -->
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-
     <!-- 1.1. Header -->
     <header class="bg-background-blurBg text-white absolute top-0 w-full z-50">
         <div class="container mx-auto flex justify-between items-center py-6 px-6" data-aos="fade-down">
@@ -39,10 +40,11 @@
                 </a>
             </figure>
             <nav class="hidden lg:flex space-x-8">
-                <a class="p linkhover active" href="index.html">Home</a>
-                <a class="p linkhover" href="About.html">About Us</a>
-                <a class="p linkhover" href="Services.html">Services</a>
-                <!-- <a class="p linkhover" href="Blog.html">Blog</a> 
+                <a class="p linkhover active" href="index.html" data-key="header.home">Home</a>
+                <a class="p linkhover" href="About.html" data-key="header.about">About Us</a>
+                <a class="p linkhover" href="Services.html" data-key="header.services">Services</a>
+                <!-- 
+                <a class="p linkhover" href="Blog.html">Blog</a> 
                 <div class="relative dropdown">
                     <a class="cursor-pointer p pb-3 linkhover">Pages <i class="fa-solid fa-chevron-down text-xs"></i></a>
                     <div class="absolute left-0 mt-2 w-48 text-primary bg-background-secondaryBg shadow-lg dropdown-menu py-3 px-2">
@@ -55,8 +57,14 @@
                     </div>
                 </div>
                 -->
-                <a class="p linkhover" href="Contact.html">Contact</a>
+                <a class="p linkhover" href="Contact.html" data-key="header.contact">Contact</a>
             </nav>
+
+            <!-- Language Switch Button -->
+            <button id="lang-switch" type="button" class="bg-blue-500 px-4 py-2 rounded text-white" data-key="header.language">
+                French
+            </button>
+
             <div class="hidden lg:flex items-center space-x-4">
                 <i class="fas fa-search text-white cursor-pointer text-xl linkhover" onclick="toggleSearch()"></i>
                 <hr class="w-px h-7 bg-white mx-4">
@@ -66,21 +74,26 @@
                 <i class="fas fa-bars text-white cursor-pointer text-2xl linkhover" onclick="toggleAside()"></i>
             </div>
         </div>
+
+        <!-- Mobile Sidebar Menu -->
         <aside class="lg:hidden fixed inset-0 bg-background-primaryBg text-white transform translate-x-full transition-transform duration-300 overflow-y-scroll aside-menu z-50" id="asideMenu">
             <div class="p-4">
                 <div class="flex justify-between items-center">
-                    <figure> <img src="assets/images/logo/logo.png" class="w-32 pt-3 pb-7" alt="RobotiQ Labs Logo"></figure>
+                    <figure> 
+                        <img src="assets/images/logo/logo.png" class="w-32 pt-3 pb-7" alt="RobotiQ Labs Logo">
+                    </figure>
                     <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleAside()">
                         <i class="fas fa-times text-3xl text-white linkhover"></i>
                     </button>
                 </div>
                 <nav class="flex flex-col space-y-4">
-                    <a class="p linkhover active" href="index.html">Home</a>
-                    <a class="p linkhover" href="About.html">About Us</a>
-                    <a class="p linkhover" href="Services.html">Services</a>
+                    <a class="p linkhover active" href="index.html" data-key="header.home">Home</a>
+                    <a class="p linkhover" href="About.html" data-key="header.about">About Us</a>
+                    <a class="p linkhover" href="Services.html" data-key="header.services">Services</a>
                     <!-- <a class="p linkhover" href="Blog.html">Blog</a> -->
-                    <a class="p linkhover" href="Contact.html">Contact</a>
-                    <!-- <div class="relative aside-dropdown">
+                    <a class="p linkhover" href="Contact.html" data-key="header.contact">Contact</a>
+                    <!--
+                    <div class="relative aside-dropdown">
                         <a class="cursor-pointer p pb-3 linkhover">Pages <i class="fa-solid fa-chevron-down text-xs"></i></a>
                         <div class="left-0 mt-2 w-48 text-primary rounded-lg shadow-lg dropdown-menu bg-transparent">
                             <a class="block py-2 linkhover p" href="Projects.html">Projects</a>
@@ -95,6 +108,8 @@
                 </nav>
             </div>
         </aside>
+
+        <!-- Side Panel Menu -->
         <div id="sideMenu" class="fixed top-0 right-0 pt-24 px-12 h-full bg-background-primaryBg text-white side-menu transform translate-x-full transition-transform duration-300 overflow-y-scroll z-50">
             <div class="p-4">
                 <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="toggleMenu()">
@@ -103,64 +118,45 @@
                 <figure>
                     <img src="assets/images/logo/logo.png" class="w-40" alt="RobotiQ Labs Logo">
                 </figure>
-                <p class="w-[min-content] min-w-96 py-10">
+                <p class="w-[min-content] min-w-96 py-10" data-key="aside.intro">
                     At RobotiQ Labs, we pioneer the future of AI-driven robotics, cybersecurity, and autonomous systems. Join us in revolutionizing technology.
                 </p>
                 <div class="flex flex-col gap-8">
                     <a href="#" class="flex gap-4 items-center linkhover">
                         <i class="fa-solid fa-location-dot"></i>
-                        <h6>2960 rue Mazenod, Longueuil, Québec, Canada</h6>
+                        <h6 data-key="aside.location">2960 rue Mazenod, Longueuil, Québec, Canada</h6>
                     </a>
                     <a href="mailto:contact@robotiqlabs.com" class="flex gap-4 items-center linkhover">
                         <i class="fa-solid fa-envelope"></i>
-                        <h6>contact@robotiqlabs.com</h6>
+                        <h6 data-key="aside.email">contact@robotiqlabs.com</h6>
                     </a>
                     <a href="tel:+1-514-123-4567" class="flex gap-4 items-center linkhover">
                         <i class="fa-solid fa-phone"></i>
-                        <h6>(+1) 514-123-4567</h6>
-                    </a>
-                </div>
-                <div class="py-12 flex flex-col gap-6">
-                    <h5>Get News & Updates</h5>
-                    <form action="#" class="w-full flex justify-between items-center bg-white rounded-[100px] ps-6 pe-1 py-2 text-secondary">
-                        <input type="email" placeholder="Your email..." class="text-black placeholder:text-black p" required name="sideMail" autocomplete="off">
-                        <button class="p-4 bg-secondary transition-all rounded-full h-11 w-11 flex justify-center items-center hover:text-white text-black">
-                            <i class="fa-regular fa-paper-plane"></i>
-                        </button>
-                    </form>
-                </div>
-                <div class="flex gap-4 pb-4">
-                    <a href="#" class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#" class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
-                        <i class="fa-brands fa-github"></i>
+                        <h6 data-key="aside.phone">(+1) 514-123-4567</h6>
                     </a>
                 </div>
             </div>
         </div>
     </header>
     <!-- End of 1.1. Header -->
-    <!-- 2.1. SubPage_Hero -->
+    <!-- 2.1. SubPage_Hero_AboutUs -->
     <section>
         <div
             class="container lg:pt-40 md:pt-36 pt-32 lg:pb-[80px] md:pb-[60px] pb-[45px] border-b-[1px] border-solid border-white text-center">
             <div class="flex flex-col items-center justify-center text-primary lg:gap-7 gap-5" data-aos="zoom-in-up">
-                <h2>Artificial Intelligence Innovation</h2>
+                <h2 data-key="subpage_hero_about.title">Artificial Intelligence Innovation</h2>
                 <div class="flex items-center md:justify-start justify-center">
                     <a href="index.html" class="linkhover">
-                        <p>HOME</p>
+                        <p data-key="subpage_hero_about.breadcrumb_home">HOME</p>
                     </a>
                     <i class="fa-solid fa-diamond text-xs p-2"></i>
-                    <p class="text-secondary">ABOUT US</p>
+                    <p class="text-secondary" data-key="subpage_hero_about.breadcrumb_about">ABOUT US</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End of 2.1. SubPage_Hero -->
+    <!-- End of 2.1. SubPage_Hero_AboutUs -->
+
     <!-- 1.4. About -->
     <section class="lg:py-[100px] md:py-[70px] py-[50px]">
         <div class="container">
@@ -168,36 +164,36 @@
                 <div class="flex text-primary flex-col xl:w-full lg:w-[90%] md:text-start text-center" data-aos="fade-up">
                     <div class="flex items-center md:justify-start justify-center">
                         <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
-                        <h6>ABOUT US</h6>
+                        <h6 data-key="about.section_title">ABOUT US</h6>
                     </div>
-                    <h2 class="py-4">Pioneering AI, Robotics & Cybersecurity</h2>
-                    <p class="xl:w-[93%] lg:w-[95%]">
+                    <h2 class="py-4" data-key="about.title">Pioneering AI, Robotics & Cybersecurity</h2>
+                    <p class="xl:w-[93%] lg:w-[95%]" data-key="about.description">
                         RobotiQ Labs specializes in Artificial Intelligence, Robotics, and Cybersecurity, 
                         driving innovation in autonomous systems, security, and smart automation. 
                         Our solutions can empower businesses to operate safely, efficiently, and at scale.
                     </p>
                     <div class="flex md:gap-8 gap-4 pt-10 flex-col">
                         <div class="flex flex-col w-full gap-[10px]">
-                            <p>Artificial Intelligence</p>
+                            <p data-key="about.ai">Artificial Intelligence</p>
                             <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
                                 <div class="bg-secondary h-2.5 rounded-full" style="width: 100%;"></div>
                             </div>
                         </div>
                         <div class="flex flex-col w-full gap-[10px]">
-                            <p>Autonomous Robotics</p>
+                            <p data-key="about.robotics">Autonomous Robotics</p>
                             <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
                                 <div class="bg-secondary h-2.5 rounded-full" style="width: 100%;"></div>
                             </div>
                         </div>
                         <div class="flex flex-col w-full gap-[10px]">
-                            <p>Cybersecurity</p>
+                            <p data-key="about.cybersecurity">Cybersecurity</p>
                             <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
                                 <div class="bg-secondary h-2.5 rounded-full" style="width: 100%;"></div>
                             </div>
                         </div>
                     </div>                    
                     <div class="lg:mt-14 md:mt-10 mt-6">
-                        <a href="About.html" class="hover1">More About</a>
+                        <a href="About.html" class="hover1" data-key="about.more_about">More About</a>
                     </div>
                 </div>
                 <div class="w-full flex lg:justify-end justify-center">
@@ -218,11 +214,13 @@
                     <div class="text-primary md:text-start text-center flex flex-col md:items-start items-center">
                         <div class="flex items-center md:justify-start justify-center">
                             <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
-                            <h6>AI KNOWLEDGE HUB</h6>
+                            <h6 data-key="cta.section_title">AI KNOWLEDGE HUB</h6>
                         </div>
-                        <h2 class="pt-4 md:pb-4 pb-3 xl:w-[90%]">Unlock The Potential Of AI And Robotics</h2>
+                        <h2 class="pt-4 md:pb-4 pb-3 xl:w-[90%]" data-key="cta.title">
+                            Unlock The Potential Of AI And Robotics
+                        </h2>
                         <div class="lg:mt-6 mt-4">
-                            <a href="#" class="hover1">Get Started</a>
+                            <a href="#" class="hover1" data-key="cta.get_started">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -341,10 +339,12 @@
                             <div class="lg:pb-8 pb-6" data-aos="fade-up">
                                 <div class="flex items-center lg:justify-start justify-center">
                                     <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
-                                    <h6>WHY US</h6>
+                                    <h6 data-key="why_us.section_title">WHY US</h6>
                                 </div>
-                                <h3 class="pt-4 md:pb-4 pb-3 xl:w-[85%]">Innovate, Ignite, Invent: Your AI Business Companion</h3>
-                                <p class="xl:w-[85%]">
+                                <h3 class="pt-4 md:pb-4 pb-3 xl:w-[85%]" data-key="why_us.title">
+                                    Innovate, Ignite, Invent: Your AI Business Companion
+                                </h3>
+                                <p class="xl:w-[85%]" data-key="why_us.description">
                                     We are dedicated to revolutionizing businesses through AI-driven innovation. Our solutions empower companies to optimize processes, enhance decision-making, and drive unparalleled growth with cutting-edge technology.
                                 </p>
                             </div>
@@ -355,8 +355,8 @@
                                             src="assets/images/icons/solution.svg" alt="solution">
                                     </figure>
                                     <div class="flex flex-col gap-1">
-                                        <h5 class="group-hover:text-secondary">Smart Solution</h5>
-                                        <p class="lg:w-[65%]">
+                                        <h5 class="group-hover:text-secondary" data-key="why_us.benefit1_title">Smart Solution</h5>
+                                        <p class="lg:w-[65%]" data-key="why_us.benefit1_description">
                                             Our AI-powered solutions leverage deep learning and automation to streamline operations, reduce costs, and improve efficiency in real-time.
                                         </p>
                                     </div>
@@ -367,8 +367,8 @@
                                             src="assets/images/icons/reliability.svg" alt="solution">
                                     </figure>
                                     <div class="flex flex-col gap-1">
-                                        <h5 class="group-hover:text-secondary">Better Reliability</h5>
-                                        <p class="lg:w-[65%]">
+                                        <h5 class="group-hover:text-secondary" data-key="why_us.benefit2_title">Better Reliability</h5>
+                                        <p class="lg:w-[65%]" data-key="why_us.benefit2_description">
                                             Our advanced AI frameworks ensure high system uptime, secure data handling, and reliable performance, making us a trusted partner for enterprises worldwide.
                                         </p>
                                     </div>
@@ -379,15 +379,15 @@
                                             src="assets/images/icons/integration.svg" alt="solution">
                                     </figure>
                                     <div class="flex flex-col gap-1">
-                                        <h5 class="group-hover:text-secondary">Easy Integration</h5>
-                                        <p class="lg:w-[65%]">
+                                        <h5 class="group-hover:text-secondary" data-key="why_us.benefit3_title">Easy Integration</h5>
+                                        <p class="lg:w-[65%]" data-key="why_us.benefit3_description">
                                             Our AI-driven platforms seamlessly integrate with existing IT infrastructure, enabling a smooth transition to intelligent automation with minimal disruptions.
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="lg:mt-10 mt-7 flex lg:justify-start justify-center">
-                                <a href="About.html" class="hover1">Learn More</a>
+                                <a href="About.html" class="hover1" data-key="why_us.learn_more">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -461,6 +461,7 @@
 
     </div>
     <br>
+    <br>
     <!-- 1.13. Footer -->
     <footer class="lg:pt-[100px] md:pt-[70px] pt-[50px] border-t-[5px] border-solid border-borderColor">
         <div class="container">
@@ -469,10 +470,10 @@
                     <figure>
                         <img class="w-44" src="assets/images/logo/logo.png" alt="RobotiQ Labs Logo">
                     </figure>
-                    <p class="lg:py-4 py-3">
+                    <p class="lg:py-4 py-3" data-key="footer.description">
                         RobotiQ Labs pioneers AI-driven robotics, cybersecurity, and smart autonomous systems, shaping the future of technology.
                     </p>
-                    <h5 class="pt-3 pb-5">Follow Us</h5>
+                    <h5 class="pt-3 pb-5" data-key="footer.follow_us">Follow Us</h5>
                     <div class="flex gap-4 pb-4">
                         <a href="#" class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
                             <i class="fa-brands fa-linkedin"></i>
@@ -485,40 +486,45 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="flex flex-col lg:w-[60%] md:w-[65%]">
                     <div class="flex flex-col gap-3 w-full md:text-start text-center">
-                        <h6 class="text-primary">Subscribe To Newsletter</h6>
+                        <h6 class="text-primary" data-key="footer.subscribe_title">Subscribe To Newsletter</h6>
                         <form class="flex lg:gap-4 gap-3 w-full md:flex-row flex-col">
-                            <input type="email" placeholder="Your email address..." class="rounded-[30px] text-primary border-[1px] border-solid border-primary bg-transparent py-3 px-5 p w-full" required name="footerMail">
-                            <button class="hover1">Subscribe</button>
+                            <input type="email" placeholder="Your email address..." class="rounded-[30px] text-primary border-[1px] border-solid border-primary bg-transparent py-3 px-5 p w-full" required name="footerMail" data-key="footer.email_placeholder">
+                            <button class="hover1" data-key="footer.subscribe_button">Subscribe</button>
                         </form>
                         <div id="footerModal" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50 px-3">
                             <div class="bg-background-blurBg rounded-lg overflow-hidden shadow-lg w-full max-w-md p-6">
                                 <img src="assets/images/icons/Confirmation_1.gif" alt="submitIcon" class="mx-auto w-24">
                                 <div class="flex flex-col gap-3 items-center text-center mt-4 text-white">
-                                    <h3 class="text-lg font-semibold">Subscription Confirmed</h3>
-                                    <h6 class="text-sm mt-2">You have successfully subscribed to our newsletter. Stay updated!</h6>
+                                    <h3 class="text-lg font-semibold" data-key="footer.subscription_confirmed">Subscription Confirmed</h3>
+                                    <h6 class="text-sm mt-2" data-key="footer.subscription_message">
+                                        You have successfully subscribed to our newsletter. Stay updated!
+                                    </h6>
                                 </div>
-                                <button id="closeFooterModal" class="hover1 mt-8 mx-auto">Close</button>
+                                <button id="closeFooterModal" class="hover1 mt-8 mx-auto" data-key="footer.close_button">Close</button>
                             </div>
                         </div>
                     </div>
+
                     <hr class="text-primary my-6">
+
                     <div class="flex flex-row justify-between md:gap-3 gap-6 md:flex-nowrap flex-wrap">
                         <div class="flex flex-col gap-3">
-                            <h4 class="text-primary">Contact</h4>
+                            <h4 class="text-primary" data-key="footer.contact">Contact</h4>
                             <ul class="flex gap-2 flex-col">
                                 <li class="text-primary linkhover">
                                     <a href="#" class="flex gap-3 items-center">
                                         <i class="fa-solid fa-location-dot"></i>
-                                        <p>2960 rue Mazenod, Longueuil, Québec, Canada</p>
-                                        <p>Nongo, Commune de Lambanyi, Conakry, Guinea</p>
+                                        <p data-key="footer.address">2960 rue Mazenod, Longueuil, Québec, Canada</p>
+                                        <p data-key="footer.address_guinea">Nongo, Commune de Lambanyi, Conakry, Guinea</p>
                                     </a>
                                 </li>
                                 <li class="text-primary linkhover">
                                     <a href="mailto:contact@robotiqlabs.com" class="flex gap-3 items-center">
                                         <i class="fa-solid fa-envelope"></i>
-                                        <p>contact@robotiqlabs.com</p>
+                                        <p data-key="footer.email">contact@robotiqlabs.com</p>
                                     </a>
                                 </li>
                                 <li class="text-primary linkhover">
@@ -529,14 +535,15 @@
                                 </li>
                             </ul>
                         </div>
+
                         <div class="flex flex-col gap-3">
-                            <h4 class="text-primary">Pages</h4>
+                            <h4 class="text-primary" data-key="footer.pages">Pages</h4>
                             <ul class="flex flex-col gap-2">
                                 <li class="text-primary linkhover">
-                                    <a href="About.html" class="p">About</a>
+                                    <a href="About.html" class="p" data-key="footer.about">About</a>
                                 </li>
                                 <li class="text-primary linkhover">
-                                    <a href="Contact.html" class="p">Contact</a>
+                                    <a href="Contact.html" class="p" data-key="footer.contact_page">Contact</a>
                                 </li>
                                 <!--
                                 <li class="text-primary linkhover">
@@ -548,6 +555,7 @@
                                 -->
                             </ul>
                         </div>
+                        
                         <!-- 
                         <div class="flex flex-col gap-3">
                             <h4 class="text-primary">Help</h4>
@@ -567,11 +575,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="border-t-[5px] border-[#FFFFFF33] border-solid lg:mt-[50px] md:mt-[30px] mt-[20px]">
-            <p class="lg:py-3 py-2 text-center text-primary">Copyright 2025 RobotiQ Labs, All rights reserved.</p>
-        </div>
-    </footer>
+            
+            <div class="border-t-[5px] border-[#FFFFFF33] border-solid lg:mt-[50px] md:mt-[30px] mt-[20px]">
+                <p class="lg:py-3 py-2 text-center text-primary" data-key="footer.copyright">
+                    Copyright 2025 RobotiQ Labs, All rights reserved.
+                </p>
+            </div>
+        </footer>
     <!-- End of 1.13. Footer -->
 
     <!-- main javascript -->
@@ -584,6 +594,8 @@
             once: true,
         });
     </script>
+    <!-- Language Switcher Script -->
+    <script defer src="script.js"></script>
 </body>
 
 </html>

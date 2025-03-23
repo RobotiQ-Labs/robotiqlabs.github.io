@@ -1,0 +1,136 @@
+{
+    "header": {
+      "home": "Accueil",
+      "about": "À Propos",
+      "services": "Services",
+      "contact": "Contact",
+      "language": "Anglais"
+    },
+    "aside": {
+      "intro": "Chez RobotiQ Labs, nous façonnons l'avenir de la robotique alimentée par l'IA, de la cybersécurité et des systèmes autonomes. Rejoignez-nous pour révolutionner la technologie.",
+      "location": "2960 rue Mazenod, Longueuil, Québec, Canada",
+      "location_guinea": "Nongo, Commune de Lambanyi, Conakry, Guinée",
+      "email": "contact@robotiqlabs.com",
+      "phone": "(+1) 514-123-4567",
+      "subscribe": "Recevoir les nouvelles et mises à jour",
+      "email_placeholder": "Votre email...",
+      "send": "Envoyer"
+    },
+    "hero": {
+      "title": "Innover avec l'IA et la Robotique",
+      "description": "Chez RobotiQ Labs, nous développons des solutions avancées de robotique et de cybersécurité basées sur l'IA, façonnant l'avenir de l'automatisation et des systèmes intelligents.",
+      "explore": "Explorer Plus",
+      "trusted_collaborations": "Collaborations de Confiance"
+    },
+    "about": {
+      "section_title": "À PROPOS",
+      "title": "Pionniers en IA, Robotique & Cybersécurité",
+      "description": "RobotiQ Labs est spécialisé en Intelligence Artificielle, Robotique et Cybersécurité, innovant dans les systèmes autonomes, la sécurité et l'automatisation intelligente. Nos solutions permettent aux entreprises d'opérer en toute sécurité, efficacement et à grande échelle.",
+      "ai": "Intelligence Artificielle",
+      "robotics": "Robotique Autonome",
+      "cybersecurity": "Cybersécurité",
+      "more_about": "En savoir plus"
+    },
+    "services": {
+      "section_title": "NOS SERVICES",
+      "title": "Découvrez Nos Services",
+      "service1_title": "Recherche & Développement",
+      "service1_description": "Expertise en robotique, intelligence artificielle et cybersécurité pour développer des solutions innovantes.",
+      "service2_title": "Innovation en Systèmes Autonomes",
+      "service2_description": "Conception de solutions intelligentes et durables, respectueuses de l’environnement avec un faible impact écologique.",
+      "service3_title": "Commercialisation de Kits",
+      "service3_description": "Vente de composants électroniques et robotiques pour les passionnés et professionnels du secteur.",
+      "service4_title": "Formation & Éducation",
+      "service4_description": "Sessions de formation en ligne et en présentiel sur l’électronique, la robotique, l’intelligence artificielle et la cybersécurité.",
+      "service5_title": "Consulting pour Études & Immigration",
+      "service5_description": "Accompagnement personnalisé pour les études à l’étranger et les processus d’immigration.",
+      "service6_title": "Services & Solutions Informatiques",
+      "service6_description": "Services et solutions informatiques pour particuliers et institutions, y compris le développement de logiciels et l'assistance technique."
+    },
+    "why_us": {
+      "section_title": "POURQUOI NOUS",
+      "title": "Innover, Inspirer, Inventer : Votre Partenaire en IA et Robotique",
+      "description": "Nous sommes dédiés à la transformation des entreprises grâce à l’innovation en intelligence artificielle. Nos solutions permettent aux entreprises d’optimiser leurs processus, d’améliorer leur prise de décision et de stimuler une croissance exceptionnelle grâce aux technologies avancées.",
+      "benefit1_title": "Solutions Intelligentes",
+      "benefit1_description": "Nos solutions alimentées par l’IA utilisent l’apprentissage profond et l’automatisation pour rationaliser les opérations, réduire les coûts et améliorer l’efficacité en temps réel.",
+      "benefit2_title": "Fiabilité Améliorée",
+      "benefit2_description": "Nos frameworks avancés garantissent une haute disponibilité des systèmes, une gestion sécurisée des données et des performances fiables, faisant de nous un partenaire de confiance pour les entreprises à l’échelle mondiale.",
+      "benefit3_title": "Intégration Facile",
+      "benefit3_description": "Nos plateformes basées sur l’IA s’intègrent parfaitement aux infrastructures informatiques existantes, facilitant une transition fluide vers l’automatisation intelligente avec un minimum de perturbations.",
+      "learn_more": "En savoir plus"
+    },
+    "cta": {
+      "section_title": "CENTRE DE CONNAISSANCE EN IA",
+      "title": "Libérez le Potentiel de l'IA et de la Robotique",
+      "get_started": "Commencer"
+    },
+    "footer": {
+      "description": "RobotiQ Labs est un pionnier de la robotique pilotée par l'IA, de la cybersécurité et des systèmes autonomes intelligents, façonnant l’avenir de la technologie.",
+      "follow_us": "Suivez-nous",
+      "subscribe_title": "S'abonner à la Newsletter",
+      "email_placeholder": "Votre adresse email...",
+      "subscribe_button": "S'abonner",
+      "subscription_confirmed": "Abonnement Confirmé",
+      "subscription_message": "Vous êtes maintenant abonné à notre newsletter. Restez informé !",
+      "close_button": "Fermer",
+      "contact": "Contact",
+      "address": "2960 rue Mazenod, Longueuil, Québec, Canada",
+      "address_guinea": "Nongo, Commune de Lambanyi, Conakry, Guinée",
+      "email": "contact@robotiqlabs.com",
+      "pages": "Pages",
+      "about": "À Propos",
+      "contact_page": "Contact",
+      "copyright": "Copyright 2025 RobotiQ Labs, Tous droits réservés."
+    },
+    "subpage_hero_about": {
+      "title": "Innovation en Intelligence Artificielle",
+      "breadcrumb_home": "ACCUEIL",
+      "breadcrumb_about": "À PROPOS"
+    },
+    "subpage_hero_services": {
+      "title": "Découvrez Nos Meilleurs Services en IA",
+      "breadcrumb_home": "ACCUEIL",
+      "breadcrumb_services": "NOS SERVICES"
+    },
+    "faq": {
+      "section_title": "FAQ",
+      "title": "Questions Fréquemment Posées",
+      "question1": "Quels sont les services proposés par RobotiQ Labs ?",
+      "answer1": "RobotiQ Labs se spécialise dans la recherche et le développement en robotique, IA et cybersécurité, l’innovation en systèmes autonomes, la commercialisation de kits électroniques et robotiques, la formation, le conseil pour les études à l’étranger et les services informatiques.",
+      "question2": "Comment l'IA renforce-t-elle la cybersécurité chez RobotiQ Labs ?",
+      "answer2": "Nous utilisons des solutions de cybersécurité basées sur l'IA, incluant la détection des menaces en temps réel, l’analyse des anomalies et des mécanismes de défense proactifs contre les cyberattaques.",
+      "question3": "Quels types de projets en robotique sont développés par RobotiQ Labs ?",
+      "answer3": "Nous concevons des systèmes robotiques autonomes pour l’automatisation industrielle, l’agriculture intelligente, la surveillance environnementale et le transport intelligent.",
+      "question4": "Proposez-vous des formations en IA et robotique ?",
+      "answer4": "Oui ! Nous offrons des formations en ligne et en présentiel en intelligence artificielle, robotique, électronique et cybersécurité pour les étudiants, professionnels et entreprises.",
+      "question5": "Comment les entreprises peuvent-elles collaborer avec RobotiQ Labs ?",
+      "answer5": "Les entreprises peuvent s’associer avec nous pour des projets de R&D, l’automatisation par l’IA, le conseil, des programmes de formation et des solutions robotiques personnalisées.",
+      "question6": "Quels services de conseil offrez-vous pour les études à l'étranger ?",
+      "answer6": "Nous accompagnons les étudiants dans leurs études à l'étranger, les démarches d’immigration, les candidatures universitaires et la planification de carrière."
+    },
+    "subpage_hero_contact": {
+        "title": "Restez Connecté Avec Nous",
+        "breadcrumb_home": "ACCUEIL",
+        "breadcrumb_contact": "CONTACT"
+    },
+    "contact_details": {
+        "phone": "Téléphone",
+        "address": "Adresse",
+        "email": "Email",
+        "follow_us": "Suivez-nous",
+        "location1": "2960 Rue Mazenod, Longueuil, J4L 4C8",
+        "location2": "Nongo, Commune de Lambanyi, Conakry",
+        "email_primary": "contact@robotiqlabs.com"
+    },
+    "contact_form": {
+        "title": "Contactez-Nous",
+        "name_label": "Votre Nom",
+        "email_label": "Email",
+        "phone_label": "Téléphone",
+        "message_label": "Message",
+        "submit_button": "Envoyer le Message",
+        "confirmation_title": "Réponse Soumise",
+        "confirmation_message": "Vos informations ont été soumises avec succès. Merci !",
+        "close_button": "Fermer"
+    }
+}

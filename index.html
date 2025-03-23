@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="assets/font-awesome-lib/icon/all.min.css">
     <!-- CSS Animations -->
     <link rel="stylesheet" href="assets/css/aos.css">
+    <!-- Language Switcher Script -->
+    <script defer src="script.js"></script>
 </head>
 
 
@@ -39,9 +41,9 @@
                 </a>
             </figure>
             <nav class="hidden lg:flex space-x-8">
-                <a class="p linkhover active" href="index.html">Home</a>
-                <a class="p linkhover" href="About.html">About Us</a>
-                <a class="p linkhover" href="Services.html">Services</a>
+                <a class="p linkhover active" href="index.html" data-key="header.home">Home</a>
+                <a class="p linkhover" href="About.html" data-key="header.about">About Us</a>
+                <a class="p linkhover" href="Services.html" data-key="header.services">Services</a>
                 <!-- <a class="p linkhover" href="Blog.html">Blog</a> 
                 <div class="relative dropdown">
                     <a class="cursor-pointer p pb-3 linkhover">Pages <i class="fa-solid fa-chevron-down text-xs"></i></a>
@@ -55,8 +57,14 @@
                     </div>
                 </div>
                 -->
-                <a class="p linkhover" href="Contact.html">Contact</a>
+                <a class="p linkhover" href="Contact.html" data-key="header.contact">Contact</a>
             </nav>
+
+            <!-- Language Switch Button -->
+            <button id="lang-switch" type="button" class="bg-blue-500 px-4 py-2 rounded text-white" data-key="header.language">
+                French
+            </button>
+
             <div class="hidden lg:flex items-center space-x-4">
                 <i class="fas fa-search text-white cursor-pointer text-xl linkhover" onclick="toggleSearch()"></i>
                 <hr class="w-px h-7 bg-white mx-4">
@@ -75,12 +83,13 @@
                     </button>
                 </div>
                 <nav class="flex flex-col space-y-4">
-                    <a class="p linkhover active" href="index.html">Home</a>
-                    <a class="p linkhover" href="About.html">About Us</a>
-                    <a class="p linkhover" href="Services.html">Services</a>
+                    <a class="p linkhover active" href="index.html" data-key="header.home">Home</a>
+                    <a class="p linkhover" href="About.html" data-key="header.about">About Us</a>
+                    <a class="p linkhover" href="Services.html" data-key="header.services">Services</a>
                     <!-- <a class="p linkhover" href="Blog.html">Blog</a> -->
-                    <a class="p linkhover" href="Contact.html">Contact</a>
-                    <!-- <div class="relative aside-dropdown">
+                    <a class="p linkhover" href="Contact.html" data-key="header.contact">Contact</a>
+                    <!-- 
+                    <div class="relative aside-dropdown">
                         <a class="cursor-pointer p pb-3 linkhover">Pages <i class="fa-solid fa-chevron-down text-xs"></i></a>
                         <div class="left-0 mt-2 w-48 text-primary rounded-lg shadow-lg dropdown-menu bg-transparent">
                             <a class="block py-2 linkhover p" href="Projects.html">Projects</a>
@@ -103,69 +112,60 @@
                 <figure>
                     <img src="assets/images/logo/logo.png" class="w-40" alt="RobotiQ Labs Logo">
                 </figure>
-                <p class="w-[min-content] min-w-96 py-10">
+                <p class="w-[min-content] min-w-96 py-10" data-key="aside.intro">
                     At RobotiQ Labs, we pioneer the future of AI-driven robotics, cybersecurity, and autonomous systems. Join us in revolutionizing technology.
                 </p>
                 <div class="flex flex-col gap-8">
                     <a href="#" class="flex gap-4 items-center linkhover">
                         <i class="fa-solid fa-location-dot"></i>
-                        <h6>2960 rue Mazenod, Longueuil, Québec, Canada</h6>
+                        <h6 data-key="aside.location">2960 rue Mazenod, Longueuil, Québec, Canada</h6>
                     </a>
                     <a href="mailto:contact@robotiqlabs.com" class="flex gap-4 items-center linkhover">
                         <i class="fa-solid fa-envelope"></i>
-                        <h6>contact@robotiqlabs.com</h6>
+                        <h6 data-key="aside.email">contact@robotiqlabs.com</h6>
                     </a>
                     <a href="tel:+1-514-123-4567" class="flex gap-4 items-center linkhover">
                         <i class="fa-solid fa-phone"></i>
-                        <h6>(+1) 514-123-4567</h6>
+                        <h6 data-key="aside.phone">(+1) 514-123-4567</h6>
                     </a>
                 </div>
                 <div class="py-12 flex flex-col gap-6">
-                    <h5>Get News & Updates</h5>
+                    <h5 data-key="aside.subscribe">Get News & Updates</h5>
                     <form action="#" class="w-full flex justify-between items-center bg-white rounded-[100px] ps-6 pe-1 py-2 text-secondary">
-                        <input type="email" placeholder="Your email..." class="text-black placeholder:text-black p" required name="sideMail" autocomplete="off">
+                        <input type="email" placeholder="Your email..." class="text-black placeholder:text-black p" required name="sideMail" autocomplete="off" data-key="aside.email_placeholder">
                         <button class="p-4 bg-secondary transition-all rounded-full h-11 w-11 flex justify-center items-center hover:text-white text-black">
                             <i class="fa-regular fa-paper-plane"></i>
                         </button>
                     </form>
                 </div>
-                <div class="flex gap-4 pb-4">
-                    <a href="#" class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#" class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </div>
             </div>
         </div>
     </header>
     <!-- End of 1.1. Header -->
+
     <!-- 1.2. Hero -->
     <section class="bg-heroBg bg-cover bg-center md:pt-36 pt-32 lg:pb-[100px] md:pb-[70px] pb-[50px]">
         <div class="container">
             <div class="md:text-start text-center" data-aos="fade-right">
-                <h1 class="text-primary">Innovating
+                <h1 class="text-primary" data-key="hero.title" data-keep-html>
+                    Innovating
                     <span class="md:flex py-4 items-center gap-2 flex-wrap">
                         <img class="md:block hidden" src="assets/images/index/hero_img.png" alt="heroImg"> with
                     </span> AI & Robotics
-                </h1>
-                <p class="text-primary sm:pt-4 pt-3 md:pb-10 pb-4 xl:w-[40%] lg:w-[50%] md:w-[59%]">
+                </h1>                                         
+                <p class="text-primary sm:pt-4 pt-3 md:pb-10 pb-4 xl:w-[40%] lg:w-[50%] md:w-[59%]" data-key="hero.description">
                     At RobotiQ Labs, we develop cutting-edge AI-driven robotics and secure-coding security solutions, shaping the future of automation and intelligent systems.
                 </p>
                 <div class="flex gap-10 flex-wrap-reverse items-center md:justify-start justify-center">
                     <div>
-                        <a href="About.html" class="hover1">
+                        <a href="About.html" class="hover1" data-key="hero.explore">
                             Explore More
                         </a>
                     </div>
                     <!--
                     <div class="flex flex-col text-white">
                         <h3><span class="number" data-final-value="300">0</span>+</h3>
-                        <p>Trusted Collaborations</p>
+                        <p data-key="hero.trusted_collaborations">Trusted Collaborations</p>
                     </div>
                     -->
                 </div>
@@ -262,36 +262,36 @@
                 <div class="flex text-primary flex-col xl:w-full lg:w-[90%] md:text-start text-center" data-aos="fade-up">
                     <div class="flex items-center md:justify-start justify-center">
                         <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
-                        <h6>ABOUT US</h6>
+                        <h6 data-key="about.section_title">ABOUT US</h6>
                     </div>
-                    <h2 class="py-4">Pioneering AI, Robotics & Cybersecurity</h2>
-                    <p class="xl:w-[93%] lg:w-[95%]">
+                    <h2 class="py-4" data-key="about.title">Pioneering AI, Robotics & Cybersecurity</h2>
+                    <p class="xl:w-[93%] lg:w-[95%]" data-key="about.description">
                         RobotiQ Labs specializes in Artificial Intelligence, Robotics, and Cybersecurity, 
                         driving innovation in autonomous systems, security, and smart automation. 
                         Our solutions can empower businesses to operate safely, efficiently, and at scale.
                     </p>
                     <div class="flex md:gap-8 gap-4 pt-10 flex-col">
                         <div class="flex flex-col w-full gap-[10px]">
-                            <p>Artificial Intelligence</p>
+                            <p data-key="about.ai">Artificial Intelligence</p>
                             <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
                                 <div class="bg-secondary h-2.5 rounded-full" style="width: 100%;"></div>
                             </div>
                         </div>
                         <div class="flex flex-col w-full gap-[10px]">
-                            <p>Autonomous Robotics</p>
+                            <p data-key="about.robotics">Autonomous Robotics</p>
                             <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
                                 <div class="bg-secondary h-2.5 rounded-full" style="width: 100%;"></div>
                             </div>
                         </div>
                         <div class="flex flex-col w-full gap-[10px]">
-                            <p>Cybersecurity</p>
+                            <p data-key="about.cybersecurity">Cybersecurity</p>
                             <div class="w-full bg-background-secondaryBg rounded-full h-2.5">
                                 <div class="bg-secondary h-2.5 rounded-full" style="width: 100%;"></div>
                             </div>
                         </div>
                     </div>                    
                     <div class="lg:mt-14 md:mt-10 mt-6">
-                        <a href="About.html" class="hover1">More About</a>
+                        <a href="About.html" class="hover1" data-key="about.more_about">More About</a>
                     </div>
                 </div>
                 <div class="w-full flex lg:justify-end justify-center">
@@ -403,9 +403,9 @@
                 <div class="flex items-center justify-center text-center flex-col text-primary" data-aos="fade-up">
                     <div class="flex items-center md:justify-start justify-center">
                         <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
-                        <h6>OUR SERVICES</h6>
+                        <h6 data-key="services.section_title">OUR SERVICES</h6>
                     </div>
-                    <h2 class="pt-4 md:pb-11 pb-8">Explore Our Services</h2>
+                    <h2 class="pt-4 md:pb-11 pb-8" data-key="services.title">Explore Our Services</h2>
                 </div>
                 <div class="flex lg:flex-row lg:flex-nowrap flex-wrap justify-center lg:gap-y-0 gap-y-6">
                     <div class="lg:w-1/4 md:w-1/2 md:px-3">
@@ -417,8 +417,10 @@
                                 </figure>
                             </div>
                             <div class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
-                                <h4 class="transition-all group-hover:translate-y-[-20%]">Research & Development</h4>
-                                <p class="hidden group-hover:block transition-all">Expertise in robotics, artificial intelligence, and cybersecurity to develop innovative solutions.</p>
+                                <h4 class="transition-all group-hover:translate-y-[-20%]" data-key="services.service1_title">Research & Development</h4>
+                                <p class="hidden group-hover:block transition-all" data-key="services.service1_description">
+                                    Expertise in robotics, artificial intelligence, and cybersecurity to develop innovative solutions.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -431,8 +433,10 @@
                                 </figure>
                             </div>
                             <div class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
-                                <h4 class="transition-all group-hover:translate-y-[-20%]">Innovation in Autonomous Systems</h4>
-                                <p class="hidden group-hover:block transition-all">Designing smart and sustainable solutions that are environmentally friendly and have a low ecological impact.</p>
+                                <h4 class="transition-all group-hover:translate-y-[-20%]" data-key="services.service2_title">Innovation in Autonomous Systems</h4>
+                                <p class="hidden group-hover:block transition-all" data-key="services.service2_description">
+                                    Designing smart and sustainable solutions that are environmentally friendly and have a low ecological impact.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -445,8 +449,10 @@
                                 </figure>
                             </div>
                             <div class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
-                                <h4 class="transition-all group-hover:translate-y-[-20%]">Commercialization of Kits</h4>
-                                <p class="hidden group-hover:block transition-all">Selling electronic and robotic components for enthusiasts and professionals in the sector.</p>
+                                <h4 class="transition-all group-hover:translate-y-[-20%]" data-key="services.service3_title">Commercialization of Kits</h4>
+                                <p class="hidden group-hover:block transition-all" data-key="services.service3_description">
+                                    Selling electronic and robotic components for enthusiasts and professionals in the sector.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -459,15 +465,17 @@
                                 </figure>
                             </div>
                             <div class="absolute bottom-0 flex flex-col justify-center p-6 text-primary transition-all group-hover:justify-start group-hover:pb-6">
-                                <h4 class="transition-all group-hover:translate-y-[-20%]">Training & Education</h4>
-                                <p class="hidden group-hover:block transition-all">Online and in-person training sessions on electronics, robotics, artificial intelligence, and cybersecurity.</p>
+                                <h4 class="transition-all group-hover:translate-y-[-20%]" data-key="services.service4_title">Training & Education</h4>
+                                <p class="hidden group-hover:block transition-all" data-key="services.service4_description">
+                                    Online and in-person training sessions on electronics, robotics, artificial intelligence, and cybersecurity.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End of 1.6. Services -->
+        <!-- End of 1.6. Services -->    
     
         <!-- 1.7. Why Us -->
         <section>
@@ -483,10 +491,12 @@
                             <div class="lg:pb-8 pb-6" data-aos="fade-up">
                                 <div class="flex items-center lg:justify-start justify-center">
                                     <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
-                                    <h6>WHY US</h6>
+                                    <h6 data-key="why_us.section_title">WHY US</h6>
                                 </div>
-                                <h3 class="pt-4 md:pb-4 pb-3 xl:w-[85%]">Innovate, Ignite, Invent: Your AI & Robotics Partner</h3>
-                                <p class="xl:w-[85%]">
+                                <h3 class="pt-4 md:pb-4 pb-3 xl:w-[85%]" data-key="why_us.title">
+                                    Innovate, Ignite, Invent: Your AI & Robotics Partner
+                                </h3>
+                                <p class="xl:w-[85%]" data-key="why_us.description">
                                     RobotiQ Labs is dedicated to pushing the boundaries of AI, robotics, and cybersecurity, delivering smart, 
                                     scalable, and reliable solutions. Our knowledge in autonomous systems, machine learning, and AI-driven security
                                     ensures that businesses can thrive in an increasingly digital world.
@@ -500,8 +510,8 @@
                                             src="assets/images/icons/solution.svg" alt="solution">
                                     </figure>
                                     <div class="flex flex-col gap-1">
-                                        <h5 class="group-hover:text-secondary">Smart Solutions</h5>
-                                        <p class="lg:w-[65%]">
+                                        <h5 class="group-hover:text-secondary" data-key="why_us.benefit1_title">Smart Solutions</h5>
+                                        <p class="lg:w-[65%]" data-key="why_us.benefit1_description">
                                             Our AI and robotics solutions optimize automation, improve efficiency, and enable businesses to scale 
                                             with cutting-edge technology.
                                         </p>
@@ -514,8 +524,8 @@
                                             src="assets/images/icons/reliability.svg" alt="reliability">
                                     </figure>
                                     <div class="flex flex-col gap-1">
-                                        <h5 class="group-hover:text-secondary">Better Reliability</h5>
-                                        <p class="lg:w-[65%]">
+                                        <h5 class="group-hover:text-secondary" data-key="why_us.benefit2_title">Better Reliability</h5>
+                                        <p class="lg:w-[65%]" data-key="why_us.benefit2_description">
                                             We design robust, secure, and AI-driven systems that provide high-performance, low-failure rates, and 
                                             dependable automation for critical applications.
                                         </p>
@@ -528,8 +538,8 @@
                                             src="assets/images/icons/integration.svg" alt="integration">
                                     </figure>
                                     <div class="flex flex-col gap-1">
-                                        <h5 class="group-hover:text-secondary">Easy Integration</h5>
-                                        <p class="lg:w-[65%]">
+                                        <h5 class="group-hover:text-secondary" data-key="why_us.benefit3_title">Easy Integration</h5>
+                                        <p class="lg:w-[65%]" data-key="why_us.benefit3_description">
                                             Our AI and robotics solutions seamlessly integrate into existing systems, ensuring smooth adoption without 
                                             disrupting workflows.
                                         </p>
@@ -537,7 +547,7 @@
                                 </div>
                             </div>
                             <div class="lg:mt-10 mt-7 flex lg:justify-start justify-center">
-                                <a href="About.html" class="hover1">Learn More</a>
+                                <a href="About.html" class="hover1" data-key="why_us.learn_more">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -753,16 +763,18 @@
                     <div class="text-primary md:text-start text-center flex flex-col md:items-start items-center">
                         <div class="flex items-center md:justify-start justify-center">
                             <i class="fa-solid fa-diamond text-xs lg:pe-3 pe-2"></i>
-                            <h6>AI KNOWLEDGE HUB</h6>
+                            <h6 data-key="cta.section_title">AI KNOWLEDGE HUB</h6>
                         </div>
-                        <h2 class="pt-4 md:pb-4 pb-3 xl:w-[90%]">Unlock the Potential of AI and Robotics</h2>
-                        <p class="xl:w-[90%] md:w-[85%] text-primary">
+                        <h2 class="pt-4 md:pb-4 pb-3 xl:w-[90%]" data-key="cta.title">
+                            Unlock the Potential of AI and Robotics
+                        </h2>
+                        <p class="xl:w-[90%] md:w-[85%] text-primary" data-key="cta.description">
                             Transform the way you work with cutting-edge AI and robotics solutions.  
                             Whether you're looking to automate, innovate, or optimize, our expertise in AI-driven automation, 
                             robotics, and cybersecurity will help you stay ahead.
                         </p>
                         <div class="lg:mt-6 mt-4">
-                            <a href="#" class="hover1">Get Started</a>
+                            <a href="#" class="hover1" data-key="cta.get_started">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -957,10 +969,10 @@
                     <figure>
                         <img class="w-44" src="assets/images/logo/logo.png" alt="RobotiQ Labs Logo">
                     </figure>
-                    <p class="lg:py-4 py-3">
+                    <p class="lg:py-4 py-3" data-key="footer.description">
                         RobotiQ Labs pioneers AI-driven robotics, cybersecurity, and smart autonomous systems, shaping the future of technology.
                     </p>
-                    <h5 class="pt-3 pb-5">Follow Us</h5>
+                    <h5 class="pt-3 pb-5" data-key="footer.follow_us">Follow Us</h5>
                     <div class="flex gap-4 pb-4">
                         <a href="#" class="p-3 flex justify-center items-center border-white border-[1px] border-solid text-white bg-background-primaryBg hover:bg-[#00F0FF] hover:text-black hover:border-[#00F0FF]">
                             <i class="fa-brands fa-linkedin"></i>
@@ -973,40 +985,45 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="flex flex-col lg:w-[60%] md:w-[65%]">
                     <div class="flex flex-col gap-3 w-full md:text-start text-center">
-                        <h6 class="text-primary">Subscribe To Newsletter</h6>
+                        <h6 class="text-primary" data-key="footer.subscribe_title">Subscribe To Newsletter</h6>
                         <form class="flex lg:gap-4 gap-3 w-full md:flex-row flex-col">
-                            <input type="email" placeholder="Your email address..." class="rounded-[30px] text-primary border-[1px] border-solid border-primary bg-transparent py-3 px-5 p w-full" required name="footerMail">
-                            <button class="hover1">Subscribe</button>
+                            <input type="email" placeholder="Your email address..." class="rounded-[30px] text-primary border-[1px] border-solid border-primary bg-transparent py-3 px-5 p w-full" required name="footerMail" data-key="footer.email_placeholder">
+                            <button class="hover1" data-key="footer.subscribe_button">Subscribe</button>
                         </form>
                         <div id="footerModal" class="fixed inset-0 items-center justify-center bg-black bg-opacity-50 hidden z-50 px-3">
                             <div class="bg-background-blurBg rounded-lg overflow-hidden shadow-lg w-full max-w-md p-6">
                                 <img src="assets/images/icons/Confirmation_1.gif" alt="submitIcon" class="mx-auto w-24">
                                 <div class="flex flex-col gap-3 items-center text-center mt-4 text-white">
-                                    <h3 class="text-lg font-semibold">Subscription Confirmed</h3>
-                                    <h6 class="text-sm mt-2">You have successfully subscribed to our newsletter. Stay updated!</h6>
+                                    <h3 class="text-lg font-semibold" data-key="footer.subscription_confirmed">Subscription Confirmed</h3>
+                                    <h6 class="text-sm mt-2" data-key="footer.subscription_message">
+                                        You have successfully subscribed to our newsletter. Stay updated!
+                                    </h6>
                                 </div>
-                                <button id="closeFooterModal" class="hover1 mt-8 mx-auto">Close</button>
+                                <button id="closeFooterModal" class="hover1 mt-8 mx-auto" data-key="footer.close_button">Close</button>
                             </div>
                         </div>
                     </div>
+
                     <hr class="text-primary my-6">
+
                     <div class="flex flex-row justify-between md:gap-3 gap-6 md:flex-nowrap flex-wrap">
                         <div class="flex flex-col gap-3">
-                            <h4 class="text-primary">Contact</h4>
+                            <h4 class="text-primary" data-key="footer.contact">Contact</h4>
                             <ul class="flex gap-2 flex-col">
                                 <li class="text-primary linkhover">
                                     <a href="#" class="flex gap-3 items-center">
                                         <i class="fa-solid fa-location-dot"></i>
-                                        <p>2960 rue Mazenod, Longueuil, Québec, Canada</p>
-                                        <p>Nongo, Commune de Lambanyi, Conakry, Guinea</p>
+                                        <p data-key="footer.address">2960 rue Mazenod, Longueuil, Québec, Canada</p>
+                                        <p data-key="footer.address_guinea">Nongo, Commune de Lambanyi, Conakry, Guinea</p>
                                     </a>
                                 </li>
                                 <li class="text-primary linkhover">
                                     <a href="mailto:contact@robotiqlabs.com" class="flex gap-3 items-center">
                                         <i class="fa-solid fa-envelope"></i>
-                                        <p>contact@robotiqlabs.com</p>
+                                        <p data-key="footer.email">contact@robotiqlabs.com</p>
                                     </a>
                                 </li>
                                 <li class="text-primary linkhover">
@@ -1017,14 +1034,15 @@
                                 </li>
                             </ul>
                         </div>
+
                         <div class="flex flex-col gap-3">
-                            <h4 class="text-primary">Pages</h4>
+                            <h4 class="text-primary" data-key="footer.pages">Pages</h4>
                             <ul class="flex flex-col gap-2">
                                 <li class="text-primary linkhover">
-                                    <a href="About.html" class="p">About</a>
+                                    <a href="About.html" class="p" data-key="footer.about">About</a>
                                 </li>
                                 <li class="text-primary linkhover">
-                                    <a href="Contact.html" class="p">Contact</a>
+                                    <a href="Contact.html" class="p" data-key="footer.contact_page">Contact</a>
                                 </li>
                                 <!--
                                 <li class="text-primary linkhover">
@@ -1036,6 +1054,7 @@
                                 -->
                             </ul>
                         </div>
+                        
                         <!-- 
                         <div class="flex flex-col gap-3">
                             <h4 class="text-primary">Help</h4>
@@ -1055,11 +1074,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="border-t-[5px] border-[#FFFFFF33] border-solid lg:mt-[50px] md:mt-[30px] mt-[20px]">
-            <p class="lg:py-3 py-2 text-center text-primary">Copyright 2025 RobotiQ Labs, All rights reserved.</p>
-        </div>
-    </footer>
+            
+            <div class="border-t-[5px] border-[#FFFFFF33] border-solid lg:mt-[50px] md:mt-[30px] mt-[20px]">
+                <p class="lg:py-3 py-2 text-center text-primary" data-key="footer.copyright">
+                    Copyright 2025 RobotiQ Labs, All rights reserved.
+                </p>
+            </div>
+        </footer>
     <!-- End of 1.13. Footer -->
 
     <!-- main javascript -->
@@ -1072,6 +1093,8 @@
             once: true,
         });
     </script>
+    <!-- Language Switcher Script -->
+    <script defer src="script.js"></script>
 </body>
 
 </html>
