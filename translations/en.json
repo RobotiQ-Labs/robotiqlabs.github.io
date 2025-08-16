@@ -7,43 +7,40 @@
       "language": "French"
     },
     "aside": {
-      "intro": "At RobotiQ Labs, we pioneer the future of AI-driven robotics, cybersecurity, and autonomous systems. Join us in revolutionizing technology.",
-      "location": "2960 rue Mazenod, Longueuil, Québec, Canada",
-      "location_guinea": "Nongo, Commune de Lambanyi, Conakry, Guinea",
+      "intro": "At RobotiQ Labs, we pioneer the future of AI-driven robotics and autonomous systems. Join us in revolutionizing technology.",
+      "location": "3614 Saint-Urbain Street, Montreal, QC H2X 2P3, Canada",
+      "location_guinea": "Nongo, Lambanyi Commune, Conakry, Guinea",
       "email": "contact@robotiqlabs.com",
-      "phone": "(+1) 514-123-4567",
+      "phone": "+1 (514) 465-6973",
       "subscribe": "Get News & Updates",
-      "email_placeholder": "Your email...",
+      "email_placeholder": "Your email address...",
       "send": "Send"
     },
     "hero": {
       "title": "Innovating with AI & Robotics",
-      "description": "At RobotiQ Labs, we develop cutting-edge AI-driven robotics and secure-coding security solutions, shaping the future of automation and intelligent systems.",
+      "description": "At RobotiQ Labs, we develop cutting-edge AI-driven robotics solutions, shaping the future of automation and intelligent systems.",
       "explore": "Explore More",
       "trusted_collaborations": "Trusted Collaborations"
     },
     "about": {
       "section_title": "ABOUT US",
-      "title": "Pioneering AI, Robotics & Cybersecurity",
-      "description": "RobotiQ Labs specializes in Artificial Intelligence, Robotics, and Cybersecurity, driving innovation in autonomous systems, security, and smart automation. Our solutions can empower businesses to operate safely, efficiently, and at scale.",
+      "title": "Pioneering AI and Robotics",
+      "description": "RobotiQ Labs specializes in Artificial Intelligence and Robotics, driving innovation in autonomous systems and smart automation. Our solutions can empower businesses to operate safely, efficiently, and at scale.",
       "ai": "Artificial Intelligence",
       "robotics": "Autonomous Robotics",
-      "cybersecurity": "Cybersecurity",
       "more_about": "More About"
     },
     "services": {
     "section_title": "OUR SERVICES",
     "title": "Explore Our Services",
     "service1_title": "Research & Development",
-    "service1_description": "Expertise in robotics, artificial intelligence, and cybersecurity to develop innovative solutions.",
+    "service1_description": "Expertise in robotics and artificial intelligence to develop innovative solutions.",
     "service2_title": "Innovation in Autonomous Systems",
     "service2_description": "Designing smart and sustainable solutions that are environmentally friendly and have a low ecological impact.",
     "service3_title": "Commercialization of Kits",
     "service3_description": "Selling electronic and robotic components for enthusiasts and professionals in the sector.",
     "service4_title": "Training & Education",
-    "service4_description": "Online and in-person training sessions on electronics, robotics, artificial intelligence, and cybersecurity.",
-    "service5_title": "Consulting for Studies & Immigration",
-    "service5_description": "Personalized support for studying abroad and immigration processes.",
+    "service4_description": "Online and in-person training sessions on electronics, robotics, and artificial intelligence.",
     "service6_title": "IT Services & Solutions",
     "service6_description": "IT services and solutions for individuals and institutions, including software development and technical assistance."
     },
@@ -65,7 +62,7 @@
       "get_started": "Get Started"
     },
     "footer": {
-      "description": "RobotiQ Labs pioneers AI-driven robotics, cybersecurity, and smart autonomous systems, shaping the future of technology.",
+      "description": "RobotiQ Labs pioneers AI-driven robotics and smart autonomous systems, shaping the future of technology.",
       "follow_us": "Follow Us",
       "subscribe_title": "Subscribe To Newsletter",
       "email_placeholder": "Your email address...",
@@ -74,8 +71,8 @@
       "subscription_message": "You have successfully subscribed to our newsletter. Stay updated!",
       "close_button": "Close",
       "contact": "Contact",
-      "address": "2960 rue Mazenod, Longueuil, Québec, Canada",
-      "address_guinea": "Nongo, Commune de Lambanyi, Conakry, Guinea",
+      "address": "3614 Saint-Urbain Street, Montreal, QC H2X 2P3, Canada",
+      "address_guinea": "Nongo, Lambanyi Commune, Conakry, Guinea",
       "email": "contact@robotiqlabs.com",
       "pages": "Pages",
       "about": "About",
@@ -96,17 +93,15 @@
     "section_title": "FAQ’s",
     "title": "Frequently Asked Questions",
     "question1": "What services does RobotiQ Labs offer?",
-    "answer1": "RobotiQ Labs specializes in research & development in robotics, AI, and cybersecurity, autonomous system innovation, electronics and robotics kit commercialization, training and education, study abroad consulting, and IT services.",
-    "question2": "How does AI enhance cybersecurity at RobotiQ Labs?",
-    "answer2": "We use AI-powered cybersecurity solutions, including real-time threat detection, anomaly analysis, and proactive defense mechanisms to protect systems from cyberattacks.",
+    "answer1": "RobotiQ Labs specializes in research & development in robotics, AI, and autonomous system innovation, electronics and robotics kit commercialization, training and education, study abroad consulting, and IT services.",
+    "question2": "How does AI enhance autonomous systems at RobotiQ Labs?",
+    "answer2": "We use AI-powered solutions, including real-time data analysis, machine learning algorithms, and advanced sensor integration to improve the capabilities and efficiency of autonomous systems.",
     "question3": "What types of robotics projects does RobotiQ Labs work on?",
     "answer3": "We develop autonomous robotic systems for industrial automation, smart agriculture, environmental monitoring, and intelligent transportation.",
     "question4": "Do you provide training on AI and robotics?",
     "answer4": "Yes! We offer both online and in-person training in AI, robotics, electronics, and cybersecurity for students, professionals, and businesses.",
     "question5": "How can businesses collaborate with RobotiQ Labs?",
-    "answer5": "Businesses can partner with us for R&D projects, AI-powered automation, consulting, training programs, and custom robotics solutions.",
-    "question6": "What consulting services do you offer for studies abroad?",
-    "answer6": "We provide guidance on study abroad opportunities, immigration processes, university applications, and career planning for students seeking international education."
+    "answer5": "Businesses can partner with us for R&D projects, AI-powered automation, consulting, training programs, and custom robotics solutions."
     },
     "subpage_hero_contact": {
     "title": "Stay Connected With Us",
@@ -118,8 +113,8 @@
     "address": "Address",
     "email": "Email",
     "follow_us": "Follow Us",
-    "location1": "2960 Rue Mazenod, Longueuil, J4L 4C8",
-    "location2": "Nongo, Commune de Lambanyi, Conakry",
+    "location1": "3614 Saint-Urbain Street, Montreal, QC H2X 2P3, Canada",
+    "location2": "Nongo, Lambanyi Commune, Conakry, Guinea",
     "email_primary": "contact@robotiqlabs.com"
     },
     "contact_form": {
